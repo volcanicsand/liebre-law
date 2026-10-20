@@ -7,18 +7,19 @@
   const key = 'liebre-analytics-choice-v2';
   const lifetime = 180 * 24 * 60 * 60 * 1000;
   let started = false;
-  const es = new URLSearchParams(location.search).get('lang') === 'en' ? false : document.documentElement.lang.startsWith('es');
-  const labels = es ? {
-    title: 'Su privacidad',
-    description: 'Con su permiso, usamos Google Analytics para contar visitas, clics de contacto y solicitudes confirmadas, y saber c\u00f3mo llegan las personas al sitio. No enviamos sus respuestas del formulario a Analytics. Puede rechazarlo y usar todo el sitio.',
+  let es = new URLSearchParams(location.search).get('lang') === 'en' || location.hash === '#en' ? false : document.documentElement.lang.startsWith('es');
+  const translations = { es: {
+    title: 'Anal\u00edtica opcional',
+    description: 'Google Analytics nos ayuda a medir visitas y contactos, sin enviar sus respuestas del formulario. Solo se activa si lo permite. Rechazar no limita el sitio.',
     allow: 'Permitir anal\u00edtica', decline: 'Rechazar',
     notice: 'Aviso de privacidad', settings: 'Privacidad', close: 'Cerrar'
-  } : {
-    title: 'Your privacy',
-    description: 'With your permission, we use Google Analytics to count visits, contact clicks and confirmed requests, and understand how people find the site. We do not send your form answers to Analytics. You can decline and use the entire site.',
+  }, en: {
+    title: 'Optional analytics',
+    description: 'Google Analytics helps us measure visits and contacts, without sending your form answers. It runs only if you allow it. Declining does not limit the site.',
     allow: 'Allow analytics', decline: 'Decline',
     notice: 'Privacy notice', settings: 'Privacy', close: 'Close'
-  };
+  }};
+  let labels = translations[es ? 'es' : 'en'];
 
   function savedChoice() {
     try {
@@ -190,18 +191,18 @@
 
   const style = document.createElement('style');
   style.textContent = `
-    #liebre-privacy-panel{box-sizing:border-box;position:fixed;z-index:10000;bottom:56px;left:16px;right:16px;max-width:650px;padding:22px;background:#f8f6ef;color:#173b35;border:1px solid #9aa99e;border-radius:8px;box-shadow:0 8px 36px #0003;font:15px/1.5 Arial,sans-serif;text-align:left}
+    #liebre-privacy-panel{box-sizing:border-box;position:fixed;z-index:10000;bottom:56px;left:16px;right:16px;max-width:510px;padding:14px 16px;background:#f8f6ef;color:#173b35;border:1px solid #9aa99e;border-radius:8px;box-shadow:0 8px 36px #0003;font:15px/1.5 Arial,sans-serif;text-align:left}
     #liebre-privacy-panel[hidden]{display:none}
-    #liebre-privacy-panel h2{margin:0 32px 8px 0;font:bold 19px/1.3 Arial,sans-serif;color:#173b35}
-    #liebre-privacy-panel p{margin:0 0 14px;font:15px/1.5 Arial,sans-serif;color:#173b35}
+    #liebre-privacy-panel h2{margin:0 32px 8px 0;font:bold 16px/1.3 Arial,sans-serif;color:#173b35}
+    #liebre-privacy-panel p{margin:0 0 7px;font:13px/1.4 Arial,sans-serif;color:#173b35}
     #liebre-privacy-panel a{color:#173b35;text-decoration:underline;font-size:14px}
-    #liebre-privacy-panel .liebre-privacy-actions{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 0}
-    #liebre-privacy-panel button,#liebre-privacy-settings{font:600 14px/1.3 Arial,sans-serif;cursor:pointer;border:1px solid #173b35;border-radius:4px;padding:10px 16px;background:#f8f6ef;color:#173b35}
+    #liebre-privacy-panel .liebre-privacy-actions{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
+    #liebre-privacy-panel button,#liebre-privacy-settings{font:600 14px/1.3 Arial,sans-serif;cursor:pointer;border:1px solid #173b35;border-radius:4px;padding:10px 16px;min-height:44px;background:#f8f6ef;color:#173b35}
     #liebre-privacy-panel button:hover,#liebre-privacy-settings:hover{background:#e9eddf}
     #liebre-privacy-panel button:focus-visible,#liebre-privacy-panel a:focus-visible,#liebre-privacy-settings:focus-visible{outline:3px solid #b8492d;outline-offset:3px}
-    #liebre-privacy-panel .liebre-privacy-close{position:absolute;top:10px;right:10px;padding:4px 9px;font-size:20px;border:0}
+    #liebre-privacy-panel .liebre-privacy-close{position:absolute;top:0;right:8px;padding:4px 9px;min-width:40px;min-height:40px;font-size:20px;border:0}
     #liebre-privacy-settings{position:fixed;z-index:9999;bottom:12px;left:16px;padding:7px 12px;font-size:12px;box-shadow:0 2px 8px #0002}
-    @media(max-width:480px){#liebre-privacy-panel{bottom:54px;padding:18px}#liebre-privacy-panel .liebre-privacy-actions button{flex:1}}
+    @media(max-width:480px){#liebre-privacy-panel{bottom:54px;padding:12px 14px}#liebre-privacy-panel .liebre-privacy-actions button{flex:1}}
   `;
   document.head.appendChild(style);
   const panel = document.createElement('section');
@@ -218,6 +219,21 @@
   const close = document.createElement('button'); close.type = 'button'; close.className = 'liebre-privacy-close'; close.textContent = '\u00d7'; close.setAttribute('aria-label', labels.close);
   const settings = document.createElement('button'); settings.type = 'button'; settings.id = 'liebre-privacy-settings'; settings.textContent = labels.settings; settings.setAttribute('aria-controls', panel.id); settings.setAttribute('aria-expanded', 'false');
   actions.append(allow, decline); panel.append(heading, description, notice, actions, close); document.body.append(panel, settings);
+  // Keep the prompt aligned with the visitor's visible language selection.
+  function refreshPrivacyLanguage() {
+    es = location.hash === '#es' || (location.hash !== '#en' && document.documentElement.lang.startsWith('es'));
+    labels = translations[es ? 'es' : 'en'];
+    heading.textContent = labels.title;
+    description.textContent = labels.description;
+    notice.textContent = labels.notice;
+    notice.href = '/privacy.html' + (es ? '#es' : '#en');
+    allow.textContent = labels.allow;
+    decline.textContent = labels.decline;
+    close.setAttribute('aria-label', labels.close);
+    settings.textContent = labels.settings;
+  }
+  new MutationObserver(refreshPrivacyLanguage).observe(document.documentElement, {attributes:true, attributeFilter:['lang']});
+  window.addEventListener('hashchange', refreshPrivacyLanguage);
 
   function hide() { panel.hidden = true; settings.setAttribute('aria-expanded', 'false'); }
   function choose(status) {
@@ -242,4 +258,5 @@
   if (choice === 'granted') start();
   else { window['ga-disable-' + id] = true; clearAnalyticsCookies(); try { sessionStorage.removeItem(attributionKey); } catch (_) {} }
 })();
+
 
