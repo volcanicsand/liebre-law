@@ -54,7 +54,7 @@
     bia_appeals_tx: 'TX', bia_appeals_ny: 'NY', bia_appeals_nj: 'NJ',
     bia_appeals_ny_nj: 'NY_NJ',
     ma_immigration_es: 'MA', ma_employment_es: 'MA', ma_probono_referral: 'MA',
-    uscis_work_permit_nj_es: 'NJ', tracking_qa: 'QA'
+    uscis_work_permit_nj_es: 'NJ', uscis_help_us_es: 'US', tracking_qa: 'QA'
   });
   const attributionKey = 'liebre-campaign-v1';
   const params = new URLSearchParams(location.search);
