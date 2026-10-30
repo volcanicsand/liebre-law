@@ -2,7 +2,7 @@
   const series = {"family": [10.2, 10.3, 11.8, 11.7, 14.4], "green": [12.9, 10.6, 11.4, 8.9, 7.4]};
   const articles = [...document.querySelectorAll('article[lang]')];
   function setLanguage() {
-    const lang = location.hash.startsWith('#en') ? 'en' : 'es';
+    const lang = location.hash.startsWith('#en') ? 'en' : location.hash.startsWith('#es') ? 'es' : document.documentElement.lang === 'en' ? 'en' : 'es';
     document.documentElement.lang = lang;
     articles.forEach(a => { a.hidden = a.lang !== lang; });
     document.querySelectorAll('.top a').forEach(a => a.setAttribute('aria-current', a.lang === lang ? 'true' : 'false'));
