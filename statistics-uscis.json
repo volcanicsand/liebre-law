@@ -1,0 +1,641 @@
+{
+  "report": "USCIS FY2025 Q4",
+  "period_end": "2025-09-30",
+  "source_file": "quarterly_all_forms_fy2025_q4_v1 (3).xlsx",
+  "source_sha256": "fd5b0f95c581576cb7321cb112bde041b11d1148ca48fda83468866e83a88a70",
+  "source_url": "https://www.uscis.gov/sites/default/files/document/data/quarterly_all_forms_fy2025_q4_v1.xlsx",
+  "prepared": "2026-10-30",
+  "notes": [
+    "Table Key:",
+    "N/A  Not available",
+    "D  Disclosure standards not met",
+    "H Replaces the value from which one could deduce the value of D",
+    "- Represents zero or rounds to 0.0",
+    "References:",
+    "1 Forms Received are the number of new applications or petitions received and entered into a case-tracking system during the reporting period.",
+    "2 The number of applications or petitions approved during the reporting period.",
+    "3 The number of applications or petitions that were denied during the reporting period. Outcomes included in this count will vary by benefit type as not all benefit types have all of these outcomes in every reporting period.  ",
+    "4 Total Completions on the 'Total - All Forms' line are approvals plus denials with three exceptions: N-648 does not break down Approvals and Denials, only Completions; and I-589 and I-131 (Humanitarian Parole) include administratively closed cases in Completions, which are not reported under the Approvals or Denials. ",
+    "5 The number of applications or petitions awaiting a decision as of the end of the reporting period. Some actions taken on cases are not reflected in this report such as administrative closures and transfers between offices; thus the total pending counts cannot be calculated using data from previous reporting periods.",
+    "6 Processing times are defined as the number of months it took for an application, petition, or request to be processed from receipt to completion in a given time period. The number of months presented is the median which is the time it took to complete 50% of all the cases processed in the quarter.",
+    "7 Includes I-600A, Application for Advance Processing of an Orphan Petition.",
+    "8 Includes I-800A, Application for Determination of Suitability to Adopt a Child from a Convention Country.",
+    "9 This refers to all I-526 form editions that predate Edition 06/01/22.",
+    "10 In March 2025, USCIS issued a Federal Register notice for termination of parole for Cubans, Haitians, Nicaragua, and Venezuelans. As part of this termination process, USCIS issued notices to aliens with an approved Employment Authorization Document (EAD) based on their parole (category (c)(11)).",
+    "   This action reverted previously approved (c)(11) EADs to a pending status. In April 2025, a stay was issued (Svitlana Doe, et al., v. Noem, et. al., No. 25-cv-10495 (D. Mass. Apr. 14, 2025)), which temporarily halted the implementation of those actions. As a result, the pending (c)(11) EADs were reverted to an approved status. ",
+    "   These actions resulted in significant changes in pending and completed (c)(11) EADs. This report reflects operational activity during a specific time period only.       ",
+    "11 Form I-924 has been decommissioned. Applicants now use Form I-956 to request or amend USCIS designation as a regional center and Form I-956F to request Approval of an Investment in a Commercial Enterprise. Applicants now use Form I-956G to submit the regional center’s",
+    "    annual statement. I-924 approvals may continue to include certain regional center reaffirmations and I-924 denials may continue to include certain regional center terminations. ",
+    "12 I-956 approvals may  include certain regional center reaffirmations and I-956 denials may include certain regional center terminations.",
+    "13 Data are for affirmatively filed I-589 asylum applications and do not include defensive asylum claims before a DOJ EOIR immigration court. For affirmative I-589s, the “denial” column includes cases where USCIS found the applicant not eligible on the merits of the claim and referred the applicant to",
+    "    an immigration judge. Previous reports did not include referrals in the denied counts. Dismissals and other case dispositions are not included in approvals or denials but are included in the total number of completions.",
+    "14 Includes the following applications for persons applying for benefits under the Immigration Reform and Control Act of 1986:  Forms I-687, I-700. I-698, I-690, I-694, and I-695.",
+    "15 Credible fear cases approved indicate fear established. Credible fear cases denied indicate fear not established.  Administratively closed cases are not included in approvals or denials, but are included in total number of completions.",
+    "16 NACARA cases approved indicate a grant of suspension of deportation or special rule cancellation of removal and adjustment of status. Denied indicates USCIS found the applicant not eligible on the merits of the claim and referred the applicant to an immigration judge. ",
+    "    Administratively closed and dismissed cases are not included in approvals or denials, but are included in total number of completions.",
+    "17 Reasonable fear cases approved indicate fear established. Reasonable fear cases denied indicate fear not established. Administratively closed cases are not included in approvals or denials, but are included in total number of completions.",
+    "18 Includes I-914A, Application for Derivative T Nonimmigrant Status.",
+    "19 Includes I-918A, Petition for Qualifying Family Member of U-1 Recipient. Processing times shown are from initial filing to Bona Fide Determination (BFD) Review.",
+    "20 Starting in Fiscal Year 2023, special immigrants adjusting status in the 4th employment-based preference category are included in “Employment” unlike previous reporting periods.",
+    "21 Includes N-600K, Application for Citizenship and Issuance of Certificate Under Section 322. ",
+    "22 This report reflects data for requests filed for individuals outside of the United States requesting parole into the United States based on urgent humanitarian or significant public benefit reasons and individuals inside the United States requesting re-parole.",
+    "23 Includes the following applications filed to waive exclusionary grounds:  Forms I-191, I-192, I-193, I-212, I-601, I-602, and I-612.",
+    "24 Immigrant Visa and EOIR Adjustment are not included in the \"Total - All Forms\" line. ",
+    "Notes:",
+    "1) Some applications or petitions approved, denied, or pending a decision may have been received in previous reporting periods. ",
+    "2) The report reflects the most up-to-date estimate available at the time the database is queried.",
+    "3) Forms received, completed (approved and denied), and pending counts may differ from counts reported in previously published reports due to processing delays and the time at which the data are queried, system updates, and post-adjudicative outcomes.",
+    "4) Completed are the number of applications or petitions approved or denied. Some benefit types include other outcomes, such as administrative closures, in the total number of completed cases. As such, approvals and denials will not sum to the total number of completions for all benefit types.",
+    "5) Forms where a processing time is unavailable are shown with an N/A. Processing times may be unavailable for a variety of reasons such as forms pending a processing times calculation or forms where times cannot be calculated. ",
+    "6) Summing the six I-485 types and the four I-765 types results in the overall totals for each form for the reporting period. ",
+    "7) Credible Fear and Reasonable Fear screenings (and their respective forms I-870 and I-899) do not confer an immigration benefit, rather they are intended to identify individuals with viable protection claims, which are then referred to the Immigration Courts for adjudication. ",
+    "   Asylum Officers do not adjudicate the actual asylum applications during the screening process.",
+    "8) For the I-131 (humanitarian parole), approvals are defined as conditional approval of the request for parole contingent upon successful completion of identity verification and any additional medical and security checks as required. ",
+    "    A request for humanitarian parole may be counted as closed for a number of reasons, including if the beneficiary withdraws the request or if USCIS has notified the petitioner that the case is eligible for further parole processing and is awaiting notification from the petitioner that the parole ",
+    "    beneficiary is in a location with a U.S. embassy or consulate.",
+    "9) The majority of the I-730 completions are captured in CLAIMS3 and included in this data. The I-730 processing times are based on completions made at the Texas and Nebraska Service Centers only.",
+    "10) For a complete list of USCIS forms and descriptions, visit https://www.uscis.gov/forms",
+    "Source:",
+    "All data (except I-589, I-870, I-899, I-881 and I-131 Humanitarian) - Department of Homeland Security, U.S. Citizenship and Immigration Services, Office of Performance and Quality",
+    "I-589, I-870, I-899, I-881, I-131 (Humanitarian Parole) data were provided by the Refugee, Asylum and International Operations (RAIO) Directorate",
+    "PASEXEC, ELIS, CLAIMS3, queried 10/2025, PAER0019082"
+  ],
+  "rows": [
+    {
+      "id": "9",
+      "form": "I-130",
+      "es": "Familiares inmediatos",
+      "en": "Petition for Alien Relative (Immediate Relative)",
+      "group": "family",
+      "guide": "peticion-familiar-i130.html",
+      "source_row": 9,
+      "quarter": {
+        "received": 173595.0,
+        "approved": 232609.0,
+        "denied": 16679.0,
+        "completed": 249288.0,
+        "pending": 801745.0
+      },
+      "year": {
+        "received": 759101.0,
+        "approved": 718610.0,
+        "denied": 54455.0,
+        "completed": 773065.0,
+        "pending": 801745.0
+      },
+      "median_quarter": 13.7
+    },
+    {
+      "id": "10",
+      "form": "I-130",
+      "es": "Otros familiares",
+      "en": "Petition for Alien Relative (All Other Relative)",
+      "group": "family",
+      "guide": "peticion-familiar-i130.html",
+      "source_row": 10,
+      "quarter": {
+        "received": 51382.0,
+        "approved": 18496.0,
+        "denied": 13156.0,
+        "completed": 31652.0,
+        "pending": 1555603.0
+      },
+      "year": {
+        "received": 243485.0,
+        "approved": 67737.0,
+        "denied": 47165.0,
+        "completed": 114902.0,
+        "pending": 1555603.0
+      },
+      "median_quarter": 38.0
+    },
+    {
+      "id": "12",
+      "form": "I-601A",
+      "es": "Perdón provisional por presencia ilegal",
+      "en": "Application for Provisional Unlawful Presence Waiver",
+      "group": "family",
+      "guide": "residencia-ajuste-estatus.html",
+      "source_row": 12,
+      "quarter": {
+        "received": 10360.0,
+        "approved": 14645.0,
+        "denied": 1675.0,
+        "completed": 16320.0,
+        "pending": 73373.0
+      },
+      "year": {
+        "received": 35533.0,
+        "approved": 59313.0,
+        "denied": 6852.0,
+        "completed": 66165.0,
+        "pending": 73373.0
+      },
+      "median_quarter": 25.2
+    },
+    {
+      "id": "13",
+      "form": "I-751",
+      "es": "Eliminar condiciones de residencia",
+      "en": "Petition to Remove Conditions on Residence",
+      "group": "family",
+      "guide": "residencia-ajuste-estatus.html",
+      "source_row": 13,
+      "quarter": {
+        "received": 37320.0,
+        "approved": 28908.0,
+        "denied": 637.0,
+        "completed": 29545.0,
+        "pending": 263655.0
+      },
+      "year": {
+        "received": 151987.0,
+        "approved": 100109.0,
+        "denied": 3704.0,
+        "completed": 103813.0,
+        "pending": 263655.0
+      },
+      "median_quarter": 18.8
+    },
+    {
+      "id": "21",
+      "form": "I-765",
+      "es": "Permiso de trabajo · asilo",
+      "en": "Application for Employment Authorization (Asylum)",
+      "group": "work",
+      "guide": "permiso-de-trabajo.html",
+      "source_row": 21,
+      "quarter": {
+        "received": 350010.0,
+        "approved": 510262.0,
+        "denied": 57034.0,
+        "completed": 567296.0,
+        "pending": 225764.0
+      },
+      "year": {
+        "received": 2203440.0,
+        "approved": 2058618.0,
+        "denied": 219554.0,
+        "completed": 2278172.0,
+        "pending": 225764.0
+      },
+      "median_quarter": 1.3
+    },
+    {
+      "id": "22",
+      "form": "I-765",
+      "es": "Permiso de trabajo · ajuste",
+      "en": "Application for Employment Authorization (Adjustment Of Status)",
+      "group": "work",
+      "guide": "permiso-de-trabajo.html",
+      "source_row": 22,
+      "quarter": {
+        "received": 173073.0,
+        "approved": 95219.0,
+        "denied": 14960.0,
+        "completed": 110179.0,
+        "pending": 373007.0
+      },
+      "year": {
+        "received": 764580.0,
+        "approved": 562232.0,
+        "denied": 43010.0,
+        "completed": 605242.0,
+        "pending": 373007.0
+      },
+      "median_quarter": 2.3
+    },
+    {
+      "id": "23",
+      "form": "I-765",
+      "es": "Permiso de trabajo · DACA",
+      "en": "Application for Employment Authorization (DACA)",
+      "group": "work",
+      "guide": "permiso-de-trabajo.html",
+      "source_row": 23,
+      "quarter": {
+        "received": 64538.0,
+        "approved": 64451.0,
+        "denied": 910.0,
+        "completed": 65361.0,
+        "pending": 129154.0
+      },
+      "year": {
+        "received": 301945.0,
+        "approved": 286906.0,
+        "denied": 3169.0,
+        "completed": 290075.0,
+        "pending": 129154.0
+      },
+      "median_quarter": 0.4
+    },
+    {
+      "id": "24",
+      "form": "I-765",
+      "es": "Permiso de trabajo · otras categorías",
+      "en": "Application for Employment Authorization (All Other)",
+      "group": "work",
+      "guide": "permiso-de-trabajo.html",
+      "source_row": 24,
+      "quarter": {
+        "received": 163141.0,
+        "approved": 167644.0,
+        "denied": 9839.0,
+        "completed": 177483.0,
+        "pending": 968972.0
+      },
+      "year": {
+        "received": 1448708.0,
+        "approved": 1067428.0,
+        "denied": 112224.0,
+        "completed": 1179652.0,
+        "pending": 968972.0
+      },
+      "median_quarter": 3.3
+    },
+    {
+      "id": "33",
+      "form": "I-589",
+      "es": "Asilo afirmativo",
+      "en": "Application for Asylum and for Withholding of Removal",
+      "group": "humanitarian",
+      "guide": "asilo-uscis.html",
+      "source_row": 33,
+      "quarter": {
+        "received": 43480.0,
+        "approved": 5996.0,
+        "denied": 12150.0,
+        "completed": 116795.0,
+        "pending": 1435560.0
+      },
+      "year": {
+        "received": 407849.0,
+        "approved": 16521.0,
+        "denied": 26434.0,
+        "completed": 345814.0,
+        "pending": 1435560.0
+      },
+      "median_quarter": null
+    },
+    {
+      "id": "35",
+      "form": "I-730",
+      "es": "Familiares de refugiados y asilados",
+      "en": "Refugee/Asylee Relative Petition",
+      "group": "humanitarian",
+      "guide": "asilo-uscis.html",
+      "source_row": 35,
+      "quarter": {
+        "received": 4789.0,
+        "approved": 407.0,
+        "denied": 108.0,
+        "completed": 515.0,
+        "pending": 14161.0
+      },
+      "year": {
+        "received": 20279.0,
+        "approved": 6160.0,
+        "denied": 1088.0,
+        "completed": 7248.0,
+        "pending": 14161.0
+      },
+      "median_quarter": 16.9
+    },
+    {
+      "id": "37",
+      "form": "I-821",
+      "es": "TPS",
+      "en": "Application for Temporary Protected Status",
+      "group": "humanitarian",
+      "guide": "tps-proteccion-temporal.html",
+      "source_row": 37,
+      "quarter": {
+        "received": 183767.0,
+        "approved": 9318.0,
+        "denied": 1363.0,
+        "completed": 10681.0,
+        "pending": 1173699.0
+      },
+      "year": {
+        "received": 949139.0,
+        "approved": 321813.0,
+        "denied": 22369.0,
+        "completed": 344182.0,
+        "pending": 1173699.0
+      },
+      "median_quarter": 7.0
+    },
+    {
+      "id": "38",
+      "form": "I-821D",
+      "es": "DACA",
+      "en": "Consideration of Deferred Action for Childhood Arrivals",
+      "group": "humanitarian",
+      "guide": "estatus-migratorio.html",
+      "source_row": 38,
+      "quarter": {
+        "received": 64795.0,
+        "approved": 64279.0,
+        "denied": 749.0,
+        "completed": 65028.0,
+        "pending": 130064.0
+      },
+      "year": {
+        "received": 298650.0,
+        "approved": 285637.0,
+        "denied": 2110.0,
+        "completed": 287747.0,
+        "pending": 130064.0
+      },
+      "median_quarter": 0.4
+    },
+    {
+      "id": "42",
+      "form": "I-914",
+      "es": "Estatus T · incluye familiares",
+      "en": "Application for T Nonimmigrant Status",
+      "group": "humanitarian",
+      "guide": "proteccion-humanitaria.html",
+      "source_row": 42,
+      "quarter": {
+        "received": 15836.0,
+        "approved": 353.0,
+        "denied": 1012.0,
+        "completed": 1365.0,
+        "pending": 68410.0
+      },
+      "year": {
+        "received": 55924.0,
+        "approved": 2945.0,
+        "denied": 3500.0,
+        "completed": 6445.0,
+        "pending": 68410.0
+      },
+      "median_quarter": 24.2
+    },
+    {
+      "id": "43",
+      "form": "I-918",
+      "es": "Estatus U · incluye familiares",
+      "en": "Petition for U Nonimmigrant Status",
+      "group": "humanitarian",
+      "guide": "proteccion-humanitaria.html",
+      "source_row": 43,
+      "quarter": {
+        "received": 7450.0,
+        "approved": 3790.0,
+        "denied": 2032.0,
+        "completed": 5822.0,
+        "pending": 421782.0
+      },
+      "year": {
+        "received": 67508.0,
+        "approved": 16957.0,
+        "denied": 6792.0,
+        "completed": 23749.0,
+        "pending": 421782.0
+      },
+      "median_quarter": 14.9
+    },
+    {
+      "id": "47",
+      "form": "I-485",
+      "es": "Residencia · familia",
+      "en": "Application to Register Permanent Residence or Adjust Status (Family)",
+      "group": "green",
+      "guide": "residencia-ajuste-estatus.html",
+      "source_row": 47,
+      "quarter": {
+        "received": 124297.0,
+        "approved": 149075.0,
+        "denied": 18619.0,
+        "completed": 167694.0,
+        "pending": 543486.0
+      },
+      "year": {
+        "received": 518255.0,
+        "approved": 433071.0,
+        "denied": 62389.0,
+        "completed": 495460.0,
+        "pending": 543486.0
+      },
+      "median_quarter": 6.0
+    },
+    {
+      "id": "48",
+      "form": "I-485",
+      "es": "Residencia · empleo",
+      "en": "Application to Register Permanent Residence or Adjust Status (Employment)",
+      "group": "green",
+      "guide": "residencia-ajuste-estatus.html",
+      "source_row": 48,
+      "quarter": {
+        "received": 24614.0,
+        "approved": 27107.0,
+        "denied": 2930.0,
+        "completed": 30037.0,
+        "pending": 166945.0
+      },
+      "year": {
+        "received": 110982.0,
+        "approved": 107945.0,
+        "denied": 14105.0,
+        "completed": 122050.0,
+        "pending": 166945.0
+      },
+      "median_quarter": 7.5
+    },
+    {
+      "id": "49",
+      "form": "I-485",
+      "es": "Residencia · asilo",
+      "en": "Application to Register Permanent Residence or Adjust Status (Asylum)",
+      "group": "green",
+      "guide": "residencia-ajuste-estatus.html",
+      "source_row": 49,
+      "quarter": {
+        "received": 16610.0,
+        "approved": 5108.0,
+        "denied": 273.0,
+        "completed": 5381.0,
+        "pending": 94482.0
+      },
+      "year": {
+        "received": 75292.0,
+        "approved": 60693.0,
+        "denied": 2057.0,
+        "completed": 62750.0,
+        "pending": 94482.0
+      },
+      "median_quarter": 11.9
+    },
+    {
+      "id": "50",
+      "form": "I-485",
+      "es": "Residencia · refugiados",
+      "en": "Application to Register Permanent Residence or Adjust Status (Refugee)",
+      "group": "green",
+      "guide": "residencia-ajuste-estatus.html",
+      "source_row": 50,
+      "quarter": {
+        "received": 25989.0,
+        "approved": 5635.0,
+        "denied": 220.0,
+        "completed": 5855.0,
+        "pending": 87573.0
+      },
+      "year": {
+        "received": 85743.0,
+        "approved": 42424.0,
+        "denied": 1339.0,
+        "completed": 43763.0,
+        "pending": 87573.0
+      },
+      "median_quarter": 7.5
+    },
+    {
+      "id": "51",
+      "form": "I-485",
+      "es": "Residencia · cubanos",
+      "en": "Application to Register Permanent Residence or Adjust Status (Cuban)",
+      "group": "green",
+      "guide": "residencia-ajuste-estatus.html",
+      "source_row": 51,
+      "quarter": {
+        "received": 44247.0,
+        "approved": 8560.0,
+        "denied": 593.0,
+        "completed": 9153.0,
+        "pending": 309922.0
+      },
+      "year": {
+        "received": 248023.0,
+        "approved": 74731.0,
+        "denied": 3112.0,
+        "completed": 77843.0,
+        "pending": 309922.0
+      },
+      "median_quarter": 9.1
+    },
+    {
+      "id": "52",
+      "form": "I-485",
+      "es": "Residencia · otras categorías",
+      "en": "Application to Register Permanent Residence or Adjust Status (Other)",
+      "group": "green",
+      "guide": "residencia-ajuste-estatus.html",
+      "source_row": 52,
+      "quarter": {
+        "received": 5234.0,
+        "approved": 9567.0,
+        "denied": 1183.0,
+        "completed": 10750.0,
+        "pending": 41509.0
+      },
+      "year": {
+        "received": 21129.0,
+        "approved": 26069.0,
+        "denied": 3752.0,
+        "completed": 29821.0,
+        "pending": 41509.0
+      },
+      "median_quarter": 18.5
+    },
+    {
+      "id": "55",
+      "form": "N-400",
+      "es": "Naturalización · militares",
+      "en": "Application for Naturalization (Military)",
+      "group": "citizenship",
+      "guide": "ciudadania-naturalizacion.html",
+      "source_row": 55,
+      "quarter": {
+        "received": 4830.0,
+        "approved": 4299.0,
+        "denied": 239.0,
+        "completed": 4538.0,
+        "pending": 9486.0
+      },
+      "year": {
+        "received": 19760.0,
+        "approved": 16064.0,
+        "denied": 804.0,
+        "completed": 16868.0,
+        "pending": 9486.0
+      },
+      "median_quarter": 3.2
+    },
+    {
+      "id": "56",
+      "form": "N-400",
+      "es": "Naturalización · general",
+      "en": "Application for Naturalization",
+      "group": "citizenship",
+      "guide": "ciudadania-naturalizacion.html",
+      "source_row": 56,
+      "quarter": {
+        "received": 236898.0,
+        "approved": 211592.0,
+        "denied": 21936.0,
+        "completed": 233528.0,
+        "pending": 524972.0
+      },
+      "year": {
+        "received": 980142.0,
+        "approved": 881986.0,
+        "denied": 84762.0,
+        "completed": 966748.0,
+        "pending": 524972.0
+      },
+      "median_quarter": 5.7
+    },
+    {
+      "id": "67",
+      "form": "I-360",
+      "es": "Amerasiáticos, viudos e inmigrantes especiales",
+      "en": "Petition for Amerasian, Widow(er), or Special Immigrant",
+      "group": "humanitarian",
+      "guide": "proteccion-humanitaria.html",
+      "source_row": 67,
+      "quarter": {
+        "received": 34849.0,
+        "approved": 17602.0,
+        "denied": 2386.0,
+        "completed": 19988.0,
+        "pending": 232676.0
+      },
+      "year": {
+        "received": 131862.0,
+        "approved": 73625.0,
+        "denied": 8062.0,
+        "completed": 81687.0,
+        "pending": 232676.0
+      },
+      "median_quarter": 5.0
+    },
+    {
+      "id": "72",
+      "form": "I-290B",
+      "es": "Apelación o moción",
+      "en": "Notice of Appeal or Motion",
+      "group": "other",
+      "guide": "tramites-uscis.html",
+      "source_row": 72,
+      "quarter": {
+        "received": 13383.0,
+        "approved": 5298.0,
+        "denied": 6131.0,
+        "completed": 11429.0,
+        "pending": 25179.0
+      },
+      "year": {
+        "received": 44633.0,
+        "approved": 18083.0,
+        "denied": 20547.0,
+        "completed": 38630.0,
+        "pending": 25179.0
+      },
+      "median_quarter": 2.4
+    }
+  ]
+}

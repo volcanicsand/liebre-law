@@ -6,6 +6,8 @@
     document.documentElement.lang = lang;
     articles.forEach(a => { a.hidden = a.lang !== lang; });
     document.querySelectorAll('.top a').forEach(a => a.setAttribute('aria-current', a.lang === lang ? 'true' : 'false'));
+    const target = document.getElementById(location.hash.slice(1));
+    if (target && location.hash !== '#en' && location.hash !== '#es') requestAnimationFrame(() => target.scrollIntoView());
     document.title = (lang === 'en' ? 'USCIS resources & attorney help' : 'Recursos de USCIS y ayuda de un abogado') + ' | Liebre Law';
   }
   articles.forEach(article => {
@@ -33,3 +35,4 @@
   document.documentElement.classList.add('js');
   setLanguage(); window.addEventListener('hashchange', setLanguage);
 })();
+
