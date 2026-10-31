@@ -95,7 +95,7 @@
         send_to: id, campaign_code: campaignCode(), campaign_market: market(),
         page_type: pageType(), page_location: measuredLocation(), page_referrer: measuredReferrer()
       };
-      if (['phone', 'text', 'email', 'form'].includes(method)) values.contact_method = method;
+      if (['phone', 'text', 'email', 'form', 'whatsapp'].includes(method)) values.contact_method = method;
       if (campaign === 'tracking_qa') values.debug_mode = true;
       window.gtag('event', event, values);
       return true;
@@ -143,7 +143,7 @@
     if (!link) return;
     decorateLink(link);
     const href = link.getAttribute('href') || '';
-    const method = href.startsWith('tel:') ? 'phone' : href.startsWith('sms:') ? 'text' : href.startsWith('mailto:') ? 'email' : '';
+    const method = href.startsWith('tel:') ? 'phone' : href.startsWith('sms:') ? 'text' : href.startsWith('mailto:') ? 'email' : href.startsWith('https://wa.me/18572485586') ? 'whatsapp' : '';
     if (method) measure('liebre_contact_click', method);
   }, true);
   document.addEventListener('focusin', event => {
@@ -192,7 +192,7 @@
 
   const style = document.createElement('style');
   style.textContent = `
-    #liebre-privacy-panel{box-sizing:border-box;position:fixed;z-index:10000;bottom:56px;left:16px;right:16px;max-width:510px;padding:14px 16px;background:#f8f6ef;color:#173b35;border:1px solid #9aa99e;border-radius:8px;box-shadow:0 8px 36px #0003;font:15px/1.5 Arial,sans-serif;text-align:left}
+    #liebre-privacy-panel{box-sizing:border-box;position:relative;max-width:1100px;margin:24px auto 70px;padding:14px 16px;background:#f8f6ef;color:#173b35;border:1px solid #9aa99e;border-radius:8px;box-shadow:0 8px 36px #0003;font:15px/1.5 Arial,sans-serif;text-align:left}
     #liebre-privacy-panel[hidden]{display:none}
     #liebre-privacy-panel h2{margin:0 32px 8px 0;font:bold 16px/1.3 Arial,sans-serif;color:#173b35}
     #liebre-privacy-panel p{margin:0 0 7px;font:13px/1.4 Arial,sans-serif;color:#173b35}
@@ -203,12 +203,12 @@
     #liebre-privacy-panel button:focus-visible,#liebre-privacy-panel a:focus-visible,#liebre-privacy-settings:focus-visible{outline:3px solid #b8492d;outline-offset:3px}
     #liebre-privacy-panel .liebre-privacy-close{position:absolute;top:0;right:8px;padding:4px 9px;min-width:40px;min-height:40px;font-size:20px;border:0}
     #liebre-privacy-settings{position:fixed;z-index:9999;bottom:12px;left:16px;padding:7px 12px;font-size:12px;box-shadow:0 2px 8px #0002}
-    @media(max-width:480px){#liebre-privacy-panel{bottom:54px;padding:12px 14px}#liebre-privacy-panel .liebre-privacy-actions button{flex:1}}
+    @media(max-width:480px){#liebre-privacy-panel{margin:20px 16px 70px;padding:12px 14px}#liebre-privacy-panel .liebre-privacy-actions button{flex:1}}
   `;
   document.head.appendChild(style);
   const panel = document.createElement('section');
   panel.id = 'liebre-privacy-panel';
-  panel.setAttribute('role', 'dialog');
+  panel.setAttribute('role', 'region');
   panel.setAttribute('aria-labelledby', 'liebre-privacy-heading');
   const heading = document.createElement('h2');
   heading.id = 'liebre-privacy-heading'; heading.textContent = labels.title;
@@ -252,7 +252,7 @@
   decline.addEventListener('click', () => choose('denied'));
   close.addEventListener('click', () => { hide(); settings.focus(); });
   panel.addEventListener('keydown', event => { if (event.key === 'Escape') { hide(); settings.focus(); } });
-  settings.addEventListener('click', () => { panel.hidden = false; settings.setAttribute('aria-expanded', 'true'); allow.focus(); });
+  settings.addEventListener('click', () => { panel.hidden = false; settings.setAttribute('aria-expanded', 'true'); panel.scrollIntoView({block:'center'}); allow.focus({preventScroll:true}); });
   const choice = savedChoice();
   panel.hidden = choice !== null || location.pathname === '/privacy.html';
   settings.setAttribute('aria-expanded', String(!panel.hidden));

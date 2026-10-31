@@ -54,3 +54,16 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 @media(max-width:750px){h1,.hero h1{font-size:46px}.brand{font-size:26px;gap:12px}.brand img,.brand .hare-mark{width:85px;height:38px}#root .hero{grid-template-columns:1fr;padding-top:26px;gap:8px}#root .hero-copy h1{max-width:580px}.hero-art{min-height:0;height:150px;margin-top:8px}.hero-art img{width:90%;max-width:480px;transform:none;margin-left:auto}#root .service-spotlight{grid-template-columns:1fr 1fr;margin-top:20px;padding:24px}.hero-actions{max-width:none!important}.practice-nav{margin:0 22px;padding-left:0;padding-right:0;gap:8px 18px}.intro{font-size:16px}.language-bar>div{display:flex;padding:8px 22px}.language-bar span{font-size:10px;text-align:left;max-width:135px;margin:0}.language-options button{font-size:12px;padding:6px 12px;min-height:36px}.header{padding-top:22px;padding-bottom:14px}.intake-header .hare-mark{width:74px;height:34px}.price{font-size:44px}}
 @media(max-width:400px){h1,.hero h1{font-size:40px}#root .service-spotlight{grid-template-columns:1fr}.language-bar>div{gap:8px}.brand{font-size:23px}.brand small{font-size:8px}.brand img,.brand .hare-mark{width:72px}.hero-art{height:125px}}
 
+
+/* Clear contact choices, shared across English and Spanish pages. */
+.contact-buttons{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.contact-buttons a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 18px;font-weight:750;text-decoration:none;border:1px solid #2349e8}
+.contact-buttons a.whatsapp-contact,a.cta.whatsapp-contact{background:#147348;color:#fff;border:1px solid #147348}
+.contact-buttons a.whatsapp-contact:hover,a.cta.whatsapp-contact:hover{background:#105d3a;color:#fff}
+.contact-buttons span{flex-basis:100%;font-size:16px}
+#root .hero-actions .contact-buttons{margin:0}
+#root .hero-actions .contact-reassurance{font-size:17px;font-weight:750;margin:14px 0 8px;color:#101a36}
+#root .hero-actions .contact-next{font-size:15px;line-height:1.55;margin:0 0 12px}
+#root .hero-actions .secondary{display:block;width:100%;text-align:left;padding:10px 0;min-height:44px}
+#root .hero-actions .time{font-size:13px;line-height:1.5;margin-top:12px}
+@media(max-width:480px){.contact-buttons a{flex:1;padding:12px 10px}.ctarow{gap:10px}.ctarow .cta{padding:12px 10px;font-size:15px}}
