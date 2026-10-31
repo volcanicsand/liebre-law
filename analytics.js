@@ -143,7 +143,7 @@
     if (!link) return;
     decorateLink(link);
     const href = link.getAttribute('href') || '';
-    const method = href.startsWith('tel:') ? 'phone' : href.startsWith('sms:') ? 'text' : href.startsWith('mailto:') ? 'email' : href.startsWith('https://wa.me/') ? 'whatsapp' : '';
+    const method = href.startsWith('tel:') ? 'phone' : href.startsWith('sms:') ? 'text' : href.startsWith('mailto:') ? 'email' : href.startsWith('https://wa.me/17817410936') ? 'whatsapp' : '';
     if (method) measure('liebre_contact_click', method);
   }, true);
   document.addEventListener('focusin', event => {
