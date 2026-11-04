@@ -92,3 +92,13 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 }
 @media print{.liebre-quick-contact{display:none}.has-quick-contact{padding-bottom:0}}
 
+
+/* Consultation offer: a clear first step before further legal services. */
+.consultation-offer{border-left:5px solid var(--accent);padding:16px 20px;margin:0 0 20px;background:#e7ebfc}
+.consultation-offer .consultation-price{font-size:clamp(46px,6vw,64px);font-weight:800;letter-spacing:-.05em;line-height:1;margin:0;color:var(--cobalt)}
+.consultation-offer .consultation-duration{font-size:20px;font-weight:750;line-height:1.35;margin:8px 0}
+.consultation-offer .consultation-value{font-size:16px;line-height:1.5;margin:0}
+.consultation-banner{padding:24px;margin:24px 0;background:#e7ebfc;border-left:5px solid var(--accent)}
+.consultation-banner h2{font-size:28px;margin:0 0 10px}.consultation-banner p{margin:10px 0;line-height:1.55}
+@media(max-width:480px){.consultation-offer{padding:16px}.consultation-offer .consultation-duration{font-size:18px}.consultation-banner{padding:18px}}
+
