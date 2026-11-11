@@ -85,6 +85,22 @@ window.LIEBRE_DATOS = {
     "en": "January 29, 2025"
   },
   "detenido_pruebas_dias": "15",
-  "eoir43_dias": "1"
+  "eoir43_dias": "1",
+  "i601_tarifa": "$1,050",
+  "i601a_tarifa": "$795",
+  "i212_tarifa": "$1,175",
+  "g1055_edicion": {
+    "es": "26 de octubre de 2026",
+    "en": "October 26, 2026"
+  },
+  "i130_papel": "$675",
+  "i130_linea": "$625",
+  "i485_papel": "$1,440",
+  "i485_linea": "$1,390",
+  "bar3_dias": "180",
+  "bar10_anos": "1",
+  "bar_perm_anos": "10",
+  "i601a_edad": "17",
+  "h212_anos": "15"
 };
 (function(){var D=window.LIEBRE_DATOS;document.querySelectorAll("[data-dato]").forEach(function(el){var v=D[el.dataset.dato];if(v==null)return;if(typeof v==="object"){var lang=(el.closest("[lang]")||document.documentElement).lang||"es";v=v[lang]||v.es;}el.textContent=v;});})();
