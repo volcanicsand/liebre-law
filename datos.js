@@ -286,6 +286,40 @@ window.LIEBRE_DATOS = {
   "n400_pagina_fecha": {
     "es": "16 de junio de 2026",
     "en": "June 16, 2026"
-  }
+  },
+  "i765_papel": "$520",
+  "i765_linea": "$470",
+  "ead_hr1_inicial": "$570",
+  "ead_hr1_renov_tps": "$280",
+  "ead_hr1_renov_asilo": "$275",
+  "auto_ext_fin": {
+    "es": "30 de octubre de 2025",
+    "en": "October 30, 2025"
+  },
+  "auto_ext_dias": "540",
+  "ead_renovar_antes_dias": "180",
+  "i765_pagina_fecha": {
+    "es": "10 de noviembre de 2026",
+    "en": "November 10, 2026"
+  },
+  "tps_ext_desde": {
+    "es": "22 de julio de 2025",
+    "en": "July 22, 2025"
+  },
+  "propuesta_asilo_fecha": {
+    "es": "23 de febrero de 2026",
+    "en": "February 23, 2026"
+  },
+  "propuesta_asilo_dias": "365",
+  "propuesta_parole_fecha": {
+    "es": "5 de junio de 2026",
+    "en": "June 5, 2026"
+  },
+  "hr1_ifr_vigente": {
+    "es": "29 de mayo de 2026",
+    "en": "May 29, 2026"
+  },
+  "i765_tarjeta_semanas": "2",
+  "i765_consulta_dias": "30"
 };
 (function(){var D=window.LIEBRE_DATOS;document.querySelectorAll("[data-dato]").forEach(function(el){var v=D[el.dataset.dato];if(v==null)return;if(typeof v==="object"){var lang=(el.closest("[lang]")||document.documentElement).lang||"es";v=v[lang]||v.es;}el.textContent=v;});})();
