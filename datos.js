@@ -257,6 +257,35 @@ window.LIEBRE_DATOS = {
   "t_bfd_desde": {
     "es": "28 de agosto de 2024",
     "en": "August 28, 2024"
+  },
+  "n400_papel": "$760",
+  "n400_linea": "$710",
+  "n400_reducida": "$380",
+  "n600_papel": "$1,385",
+  "n600_linea": "$1,335",
+  "nat_anos": "5",
+  "nat_anos_conyuge": "3",
+  "nat_meses_presencia": "30",
+  "nat_meses_presencia_conyuge": "18",
+  "nat_meses_estado": "3",
+  "nat_dias_anticipo": "90",
+  "civics_fecha": {
+    "es": "20 de octubre de 2025",
+    "en": "October 20, 2025"
+  },
+  "civics_preguntas": "20",
+  "civics_correctas": "12",
+  "civics_banco": "128",
+  "civics_2008_preguntas": "10",
+  "civics_2008_correctas": "6",
+  "ausencia_rompe_meses": "6",
+  "nat_espera_tras_ausencia": {
+    "es": "4 años y 1 día",
+    "en": "4 years and 1 day"
+  },
+  "n400_pagina_fecha": {
+    "es": "16 de junio de 2026",
+    "en": "June 16, 2026"
   }
 };
 (function(){var D=window.LIEBRE_DATOS;document.querySelectorAll("[data-dato]").forEach(function(el){var v=D[el.dataset.dato];if(v==null)return;if(typeof v==="object"){var lang=(el.closest("[lang]")||document.documentElement).lang||"es";v=v[lang]||v.es;}el.textContent=v;});})();
