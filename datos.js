@@ -104,6 +104,18 @@ window.LIEBRE_DATOS = {
   "h212_anos": "15",
   "absentia_dias": "180",
   "cambio_direccion_dias": "5",
-  "mocion_tarifa_reducida": "$950"
+  "mocion_tarifa_reducida": "$950",
+  "nta_dias_minimos": "10",
+  "mch_pruebas_dias": "15",
+  "mch_respuesta_dias": "10",
+  "ich_respuesta_dias": "10",
+  "alegatos_escritos_dias": "30",
+  "alegatos_respuesta_dias": "20",
+  "asilo_reloj_dias": "180",
+  "ausencia_bar_anos": "10",
+  "icpm_fecha": {
+    "es": "11 de noviembre de 2026",
+    "en": "November 11, 2026"
+  }
 };
 (function(){var D=window.LIEBRE_DATOS;document.querySelectorAll("[data-dato]").forEach(function(el){var v=D[el.dataset.dato];if(v==null)return;if(typeof v==="object"){var lang=(el.closest("[lang]")||document.documentElement).lang||"es";v=v[lang]||v.es;}el.textContent=v;});})();
