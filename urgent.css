@@ -1,0 +1,7 @@
+.urgent{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:14px 0 6px}
+.urgent a{display:block;background:#fff;border:1.5px solid #c9d2f7;border-radius:14px;padding:14px 16px;text-decoration:none;color:#1a2140;box-shadow:0 1px 0 rgba(20,30,80,.04);transition:transform .18s ease,border-color .18s ease}
+.urgent a:hover{transform:translateY(-2px);border-color:#2349e8}
+.urgent strong{display:block;color:#2349e8;font-size:17px;margin-bottom:4px}
+.urgent span{display:block;font-size:14px;line-height:1.4;color:#50586b}
+.urgent .appeal{border-color:#f5b98a;background:#fff8f1}.urgent .appeal strong{color:#d2581b}
+@media print{.urgent{display:none}}

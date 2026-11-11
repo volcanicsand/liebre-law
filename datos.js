@@ -2,8 +2,8 @@
 // Cada clave puede ser un texto o {es, en}. Los elementos con data-dato="clave" se actualizan al cargar.
 window.LIEBRE_DATOS = {
   "actualizado": {
-    "es": "10 de noviembre de 2026",
-    "en": "November 10, 2026"
+    "es": "11 de noviembre de 2026",
+    "en": "November 11, 2026"
   },
   "tarifas_vigentes_desde": {
     "es": "16 de octubre de 2026",
