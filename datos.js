@@ -320,6 +320,50 @@ window.LIEBRE_DATOS = {
     "en": "May 29, 2026"
   },
   "i765_tarjeta_semanas": "2",
-  "i765_consulta_dias": "30"
+  "i765_consulta_dias": "30",
+  "i821_inicial": "$520",
+  "i821_biometria": "$30",
+  "tps_paises_vigentes": "4",
+  "tps_sv_hasta": {
+    "es": "9 de septiembre de 2026",
+    "en": "September 9, 2026"
+  },
+  "tps_ua_hasta": {
+    "es": "19 de octubre de 2026",
+    "en": "October 19, 2026"
+  },
+  "tps_lb_hasta": {
+    "es": "27 de noviembre de 2026",
+    "en": "November 27, 2026"
+  },
+  "tps_pagina_fecha": {
+    "es": "20 de octubre de 2026",
+    "en": "October 20, 2026"
+  },
+  "tps_registro_min_dias": "180",
+  "tps_tarde_dias": "60",
+  "tps_reinscripcion_dias": "30",
+  "tps_viaje_desde": {
+    "es": "1 de julio de 2022",
+    "en": "July 1, 2022"
+  },
+  "tps_prorroga_meses": "6",
+  "tps_aviso_dias": "60",
+  "tps_scotus_fecha": {
+    "es": "25 de junio de 2026",
+    "en": "June 25, 2026"
+  },
+  "tps_ve_fin": {
+    "es": "3 de octubre de 2025",
+    "en": "October 3, 2025"
+  },
+  "tps_hn_fin": {
+    "es": "8 de septiembre de 2025",
+    "en": "September 8, 2025"
+  },
+  "tps_ht_fin": {
+    "es": "27 de julio de 2026",
+    "en": "July 27, 2026"
+  }
 };
 (function(){var D=window.LIEBRE_DATOS;document.querySelectorAll("[data-dato]").forEach(function(el){var v=D[el.dataset.dato];if(v==null)return;if(typeof v==="object"){var lang=(el.closest("[lang]")||document.documentElement).lang||"es";v=v[lang]||v.es;}el.textContent=v;});})();
