@@ -364,6 +364,32 @@ window.LIEBRE_DATOS = {
   "tps_ht_fin": {
     "es": "27 de julio de 2026",
     "en": "July 27, 2026"
+  },
+  "rfe_max_semanas": "12",
+  "rfe_max_dias": "84",
+  "noid_max_dias": "30",
+  "correo_dias_extra": "3",
+  "ar11_dias": "10",
+  "i290b_dias": "30",
+  "i290b_dias_correo": "33",
+  "i290b_tarifa": "$800",
+  "i912_fpg": "150",
+  "efiling_ifr_fecha": {
+    "es": "11 de agosto de 2026",
+    "en": "August 11, 2026"
+  },
+  "firmas_ifr_vigente": {
+    "es": "10 de julio de 2026",
+    "en": "July 10, 2026"
+  },
+  "uscis_tel": "800-375-5283",
+  "i290b_pagina_fecha": {
+    "es": "10 de noviembre de 2026",
+    "en": "November 10, 2026"
+  },
+  "i912_pagina_fecha": {
+    "es": "14 de octubre de 2026",
+    "en": "October 14, 2026"
   }
 };
 (function(){var D=window.LIEBRE_DATOS;document.querySelectorAll("[data-dato]").forEach(function(el){var v=D[el.dataset.dato];if(v==null)return;if(typeof v==="object"){var lang=(el.closest("[lang]")||document.documentElement).lang||"es";v=v[lang]||v.es;}el.textContent=v;});})();
