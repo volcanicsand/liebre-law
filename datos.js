@@ -233,6 +233,30 @@ window.LIEBRE_DATOS = {
     "en": "December 21, 2000"
   },
   "p245i_suma": "$1,000",
-  "familia_cupo": "226,000"
+  "familia_cupo": "226,000",
+  "u_cupo": "10,000",
+  "t_cupo": "5,000",
+  "u_anos_residencia": "3",
+  "u_vigencia_anos": "4",
+  "bfd_vigencia_anos": "4",
+  "supl_b_meses": "6",
+  "u_fy_cupo_fecha": {
+    "es": "5 de septiembre de 2026",
+    "en": "September 5, 2026"
+  },
+  "u_reanudacion_fecha": {
+    "es": "1 de octubre de 2026",
+    "en": "October 1, 2026"
+  },
+  "u_lote_fecha": {
+    "es": "31 de agosto de 2017",
+    "en": "August 31, 2017"
+  },
+  "vawa_hijo_edad_max": "25",
+  "vawa_plazo_anos": "2",
+  "t_bfd_desde": {
+    "es": "28 de agosto de 2024",
+    "en": "August 28, 2024"
+  }
 };
 (function(){var D=window.LIEBRE_DATOS;document.querySelectorAll("[data-dato]").forEach(function(el){var v=D[el.dataset.dato];if(v==null)return;if(typeof v==="object"){var lang=(el.closest("[lang]")||document.documentElement).lang||"es";v=v[lang]||v.es;}el.textContent=v;});})();
