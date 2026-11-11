@@ -390,6 +390,23 @@ window.LIEBRE_DATOS = {
   "i912_pagina_fecha": {
     "es": "14 de octubre de 2026",
     "en": "October 14, 2026"
-  }
+  },
+  "eoir_tel": "1-800-898-7180",
+  "cbp_foia_fecha": {
+    "es": "22 de enero de 2026",
+    "en": "January 22, 2026"
+  },
+  "ice_foia_apelar_dias": "90",
+  "uscis_foia_pagina_fecha": {
+    "es": "30 de octubre de 2026",
+    "en": "October 30, 2026"
+  },
+  "cbp_sin_registros_antes": "1982",
+  "bp_sin_registros_antes": "2000",
+  "rop_pagina_fecha": {
+    "es": "1 de octubre de 2026",
+    "en": "October 1, 2026"
+  },
+  "anumero_digitos": "9"
 };
 (function(){var D=window.LIEBRE_DATOS;document.querySelectorAll("[data-dato]").forEach(function(el){var v=D[el.dataset.dato];if(v==null)return;if(typeof v==="object"){var lang=(el.closest("[lang]")||document.documentElement).lang||"es";v=v[lang]||v.es;}el.textContent=v;});})();
