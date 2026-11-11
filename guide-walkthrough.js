@@ -44,10 +44,11 @@
       cards.forEach(card => {
         const show = (filter === 'all' || card.dataset.category === filter) && normalize(card.textContent + ' ' + (card.dataset.keywords || '')).includes(query);
         card.hidden = !show;
-        if (show) count++;
+        if (show && !card.matches('li')) count++;
       });
       section.querySelector('[role=status]').textContent = section.closest('[lang]').lang === 'es' ? `${count} ${count === 1 ? "guía" : "guías"}` : `${count} ${count === 1 ? "guide" : "guides"}`;
-      section.querySelector('[data-empty]').hidden = count !== 0;
+      const full = section.querySelector('.completas'); const anyFull = full ? [...full.querySelectorAll('li')].some(li => !li.hidden) : false; if (full) full.hidden = !anyFull;
+      section.querySelector('[data-empty]').hidden = count !== 0 || anyFull;
     }
     input.addEventListener('input', update);
     filters.forEach(button => button.addEventListener('click', () => {
