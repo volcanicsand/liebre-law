@@ -84,9 +84,7 @@ window.LIEBRE_DATOS = {
     "es": "29 de enero de 2025",
     "en": "January 29, 2025"
   },
-  "yajure_fecha": {
-    "es": "5 de septiembre de 2025",
-    "en": "September 5, 2025"
-  }
+  "detenido_pruebas_dias": "15",
+  "eoir43_dias": "1"
 };
 (function(){var D=window.LIEBRE_DATOS;document.querySelectorAll("[data-dato]").forEach(function(el){var v=D[el.dataset.dato];if(v==null)return;if(typeof v==="object"){var lang=(el.closest("[lang]")||document.documentElement).lang||"es";v=v[lang]||v.es;}el.textContent=v;});})();
