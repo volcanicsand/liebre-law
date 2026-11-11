@@ -407,6 +407,54 @@ window.LIEBRE_DATOS = {
     "es": "1 de octubre de 2026",
     "en": "October 1, 2026"
   },
-  "anumero_digitos": "9"
+  "anumero_digitos": "9",
+  "ice_dril_tel": {
+    "es": "1-888-351-4024",
+    "en": "1-888-351-4024"
+  },
+  "ice_dril_horas": {
+    "es": "lunes a viernes, 8 a.m. a 8 p.m. (hora del Este)",
+    "en": "Monday to Friday, 8 a.m. to 8 p.m. Eastern"
+  },
+  "ice_contacto_fecha": {
+    "es": "7 de octubre de 2026",
+    "en": "October 7, 2026"
+  },
+  "custodia_horas": {
+    "es": "48",
+    "en": "48"
+  },
+  "consular_horas": {
+    "es": "72",
+    "en": "72"
+  },
+  "er_anos": {
+    "es": "2",
+    "en": "2"
+  },
+  "er_fr_fecha": {
+    "es": "24 de enero de 2025",
+    "en": "January 24, 2025"
+  },
+  "er_cadc_fecha": {
+    "es": "23 de junio de 2026",
+    "en": "June 23, 2026"
+  },
+  "ice_memo_fecha": {
+    "es": "12 de mayo de 2025",
+    "en": "May 12, 2025"
+  },
+  "ice_memo_horas": {
+    "es": "entre las 6 a.m. y las 10 p.m.",
+    "en": "between 6 a.m. and 10 p.m."
+  },
+  "ma_cuidador_anos": {
+    "es": "2",
+    "en": "2"
+  },
+  "ma_cuidador_testigos": {
+    "es": "2",
+    "en": "2"
+  }
 };
 (function(){var D=window.LIEBRE_DATOS;document.querySelectorAll("[data-dato]").forEach(function(el){var v=D[el.dataset.dato];if(v==null)return;if(typeof v==="object"){var lang=(el.closest("[lang]")||document.documentElement).lang||"es";v=v[lang]||v.es;}el.textContent=v;});})();

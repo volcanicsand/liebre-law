@@ -4,6 +4,7 @@
 .urgent strong{display:block;color:#2349e8;font-size:17px;margin-bottom:4px}
 .urgent span{display:block;font-size:14px;line-height:1.4;color:#50586b}
 .urgent .appeal{border-color:#f5b98a;background:#fff8f1}.urgent .appeal strong{color:#d2581b}
+.urgent .rights{border-color:#8fd0b0;background:#f1fbf5}.urgent .rights strong{color:#1b7a4a}
 @media print{.urgent{display:none}}
 
 .full-list{list-style:none;margin:14px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}.full-list a{display:block;background:white;border:1px solid #dce0eb;border-radius:12px;padding:12px 14px;text-decoration:none;color:inherit;transition:border-color .15s,transform .15s}.full-list a:hover{border-color:#2349e8;transform:translateY(-1px)}.full-list strong{display:block;color:#2349e8;margin-bottom:3px}.full-list span{font-size:14px;color:#50586b}
