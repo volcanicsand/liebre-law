@@ -11,3 +11,17 @@
     });
   });
 })();
+// Liebre Law · WhatsApp al abogado: abre el chat con un mensaje inicial en el idioma de la página.
+(function(){
+  function prefill(){
+    var h=location.hash, forced=(h==='#en')?'en':(h==='#es'?'es':null);
+    var t=document.title.replace(/\s*\|\s*Liebre Law\s*$/,'');
+    document.querySelectorAll('a[href^="https://wa.me/17817410936"]').forEach(function(a){
+      var c=a.closest('[lang]'); var l=forced||(c&&c.lang)||document.documentElement.lang||'es';
+      var msg=(l.indexOf('es')===0)?('Hola. Leí «'+t+'» en liebrelaw.com. Mi situación: '):('Hi. I read "'+t+'" on liebrelaw.com. My situation: ');
+      a.href='https://wa.me/17817410936?text='+encodeURIComponent(msg);
+    });
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',prefill);}else{prefill();}
+  addEventListener('hashchange',prefill);
+})();
