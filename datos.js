@@ -65,6 +65,28 @@ window.LIEBRE_DATOS = {
     "en": "March 2026"
   },
   "honorarios_apelacion_inicial": "$1,000",
-  "honorarios_apelacion_total": "$3,200"
+  "honorarios_apelacion_total": "$3,200",
+  "c42b_tarifa": "$1,690",
+  "c42a_tarifa": "$730",
+  "biometria_tarifa": "$30",
+  "c42b_anos": "10",
+  "c42a_anos_lpr": "5",
+  "c42a_anos_residencia": "7",
+  "vawa_anos": "3",
+  "cancelacion_cupo": "4,000",
+  "ausencia_dias": "90",
+  "ausencia_dias_total": "180",
+  "hijo_edad": "21",
+  "fianza_minima": "$1,500",
+  "fianza_dhs_stay": "$10,000",
+  "fianza_apelacion_dias": "30",
+  "laken_riley_fecha": {
+    "es": "29 de enero de 2025",
+    "en": "January 29, 2025"
+  },
+  "yajure_fecha": {
+    "es": "5 de septiembre de 2025",
+    "en": "September 5, 2025"
+  }
 };
 (function(){var D=window.LIEBRE_DATOS;document.querySelectorAll("[data-dato]").forEach(function(el){var v=D[el.dataset.dato];if(v==null)return;if(typeof v==="object"){var lang=(el.closest("[lang]")||document.documentElement).lang||"es";v=v[lang]||v.es;}el.textContent=v;});})();
