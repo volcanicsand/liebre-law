@@ -66,3 +66,21 @@
     }));
   });
 })();
+// Scroll reveal (added 2026-11-10): sections and cards rise into view once; disabled under reduced motion.
+(() => {
+  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const targets = document.querySelectorAll('section.content, section.consult, section.detail, .library-grid > *, .step-panel, .checklist > *, .related-grid > a:not(.followup .related-grid a), .detail ol.steps > li, .detail table, .callout');
+  let i = 0, lastParent = null;
+  targets.forEach(el => {
+    if (el.closest('.hero') || el.closest('.followup')) return;
+    if (el.parentElement !== lastParent) { i = 0; lastParent = el.parentElement; }
+    el.style.setProperty('--i', String(Math.min(i++, 6)));
+    el.classList.add('reveal');
+  });
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  // anything already in view on load shows immediately
+  requestAnimationFrame(() => document.querySelectorAll('.reveal').forEach(el => { const r = el.getBoundingClientRect(); if (r.top < innerHeight && r.bottom > 0) el.classList.add('in'); }));
+})();
