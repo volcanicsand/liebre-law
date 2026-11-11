@@ -114,9 +114,9 @@ function directContactButtons(lang,consultation=false) {
    (0,T.jsx)('strong',{children:consultation?(lang==='es'?'Solicitar consulta por WhatsApp':'Request a consultation on WhatsApp'):(lang==='es'?'Escribir por WhatsApp':'Message on WhatsApp')}),
    (0,T.jsx)('span',{className:'contact-number',children:'781-741-0936'})
   ]}),
-  (0,T.jsx)('a',{href:'sms:+18572485586',children:lang==='es'?'Enviar texto':'Send a text'}),
-  (0,T.jsx)('a',{href:'tel:+18572485586',children:lang==='es'?'Llamar':'Call'}),
-  (0,T.jsx)('span',{className:'contact-phone-note',children:lang==='es'?'Textos y llamadas: 857-248-5586':'Texts and calls: 857-248-5586'})
+  (0,T.jsx)('a',{href:'sms:+17817410936',children:lang==='es'?'Enviar texto':'Send a text'}),
+  (0,T.jsx)('a',{href:'tel:+17817410936',children:lang==='es'?'Llamar':'Call'}),
+  (0,T.jsx)('span',{className:'contact-phone-note',children:lang==='es'?'Textos y llamadas: 781-741-0936':'Texts and calls: 781-741-0936'})
  ]});
 }
 function directIntakeContact(lang) {
