@@ -116,6 +116,123 @@ window.LIEBRE_DATOS = {
   "icpm_fecha": {
     "es": "11 de noviembre de 2026",
     "en": "November 11, 2026"
-  }
+  },
+  "vb_fa_f1": {
+    "es": "22 ene 2021",
+    "en": "Jan 22, 2021"
+  },
+  "vb_fa_f2a": {
+    "es": "22 oct 2026",
+    "en": "Oct 22, 2026"
+  },
+  "vb_fa_f2b": {
+    "es": "22 ago 2020",
+    "en": "Aug 22, 2020"
+  },
+  "vb_fa_f3": {
+    "es": "22 oct 2015",
+    "en": "Oct 22, 2015"
+  },
+  "vb_fa_f4": {
+    "es": "22 oct 2012",
+    "en": "Oct 22, 2012"
+  },
+  "vb_fa_f1_mx": {
+    "es": "22 sep 2008",
+    "en": "Sep 22, 2008"
+  },
+  "vb_fa_f2a_mx": {
+    "es": "22 abr 2026",
+    "en": "Apr 22, 2026"
+  },
+  "vb_fa_f2b_mx": {
+    "es": "15 may 2010",
+    "en": "May 15, 2010"
+  },
+  "vb_fa_f3_mx": {
+    "es": "15 jul 2001",
+    "en": "Jul 15, 2001"
+  },
+  "vb_fa_f4_mx": {
+    "es": "22 abr 2001",
+    "en": "Apr 22, 2001"
+  },
+  "vb_df_f1": {
+    "es": "1 feb 2021",
+    "en": "Feb 1, 2021"
+  },
+  "vb_df_f2a": {
+    "es": "Al día (C)",
+    "en": "Current (C)"
+  },
+  "vb_df_f2b": {
+    "es": "1 sep 2020",
+    "en": "Sep 1, 2020"
+  },
+  "vb_df_f3": {
+    "es": "1 nov 2015",
+    "en": "Nov 1, 2015"
+  },
+  "vb_df_f4": {
+    "es": "1 nov 2012",
+    "en": "Nov 1, 2012"
+  },
+  "vb_df_f1_mx": {
+    "es": "1 dic 2008",
+    "en": "Dec 1, 2008"
+  },
+  "vb_df_f2a_mx": {
+    "es": "Al día (C)",
+    "en": "Current (C)"
+  },
+  "vb_df_f2b_mx": {
+    "es": "22 mar 2011",
+    "en": "Mar 22, 2011"
+  },
+  "vb_df_f3_mx": {
+    "es": "1 dic 2002",
+    "en": "Dec 1, 2002"
+  },
+  "vb_df_f4_mx": {
+    "es": "30 abr 2001",
+    "en": "Apr 30, 2001"
+  },
+  "vb_mes": {
+    "es": "noviembre de 2026",
+    "en": "November 2026"
+  },
+  "i864_125_2": "$27,050",
+  "i864_125_3": "$34,150",
+  "i864_125_4": "$41,250",
+  "i864_125_5": "$48,350",
+  "i864_125_extra": "$7,100",
+  "i864_vigente": {
+    "es": "1 de marzo de 2026",
+    "en": "March 1, 2026"
+  },
+  "i485_menor": "$950",
+  "i765_con_i485": "$260",
+  "i485_i765_desde": {
+    "es": "1 de abril de 2024",
+    "en": "April 1, 2024"
+  },
+  "i693_desde": {
+    "es": "2 de diciembre de 2024",
+    "en": "December 2, 2024"
+  },
+  "i693_firma_desde": {
+    "es": "1 de noviembre de 2023",
+    "en": "November 1, 2023"
+  },
+  "p245i_fecha": {
+    "es": "30 de abril de 2001",
+    "en": "April 30, 2001"
+  },
+  "p245i_presencia": {
+    "es": "21 de diciembre de 2000",
+    "en": "December 21, 2000"
+  },
+  "p245i_suma": "$1,000",
+  "familia_cupo": "226,000"
 };
 (function(){var D=window.LIEBRE_DATOS;document.querySelectorAll("[data-dato]").forEach(function(el){var v=D[el.dataset.dato];if(v==null)return;if(typeof v==="object"){var lang=(el.closest("[lang]")||document.documentElement).lang||"es";v=v[lang]||v.es;}el.textContent=v;});})();
