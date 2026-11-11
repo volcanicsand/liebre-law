@@ -101,6 +101,9 @@ window.LIEBRE_DATOS = {
   "bar10_anos": "1",
   "bar_perm_anos": "10",
   "i601a_edad": "17",
-  "h212_anos": "15"
+  "h212_anos": "15",
+  "absentia_dias": "180",
+  "cambio_direccion_dias": "5",
+  "mocion_tarifa_reducida": "$950"
 };
 (function(){var D=window.LIEBRE_DATOS;document.querySelectorAll("[data-dato]").forEach(function(el){var v=D[el.dataset.dato];if(v==null)return;if(typeof v==="object"){var lang=(el.closest("[lang]")||document.documentElement).lang||"es";v=v[lang]||v.es;}el.textContent=v;});})();
