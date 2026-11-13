@@ -13,12 +13,17 @@
   line-height: 1.6;
   border-top: 4px solid var(--cobalt);
 }
-.refined-site :is(h1,h2,h3,.esen .q,.choice,.quick-step strong) {
-  font-family: 'Archivo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.refined-site h1,
+.refined-site h2,
+.refined-site h3,
+.refined-site .esen .q,
+.refined-site .choice,
+.refined-site .quick-step strong {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 500;
-  letter-spacing: -.025em;
+  letter-spacing: -.012em;
 }
-.refined-site h2 { font-size: clamp(27px,3vw,36px); line-height: 1.2; }
+.refined-site h2 { font-size: clamp(25px,2.6vw,30px); line-height: 1.3; }
 .refined-site h3 { line-height: 1.35; }
 .refined-site :is(.language-bar,.top) { background: transparent; color: var(--ink); }
 .refined-site :is(.language-bar nav,.top nav) {
@@ -52,9 +57,11 @@
 .refined-site .hero > .eyebrow,
 .library-page .hero > .choice-grid > .choice { animation: none; }
 .refined-site .hero h1 {
-  font-size: clamp(38px,4.6vw,58px);
-  line-height: 1.08;
-  letter-spacing: -.04em;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: clamp(36px,3.7vw,46px);
+  line-height: 1.16;
+  letter-spacing: -.025em;
   color: var(--cobalt);
   margin: 16px 0 24px;
   text-wrap: balance;
@@ -78,25 +85,26 @@
   display: grid;
   grid-template-columns: minmax(0,.85fr) minmax(0,1.3fr);
   gap: clamp(36px,6vw,80px);
-  padding: 44px 0 56px;
+  padding: 48px 0 56px;
   align-items: start;
 }
 .home-page .intro-copy { position: sticky; top: 32px; }
 .home-page .intro-copy .eyebrow { margin-top: 0; }
-.home-page .welcome-intro { margin: 0; font-size: 18px; }
-.home-page .question-heading { margin: 0 0 20px; font-size: 26px; }
-.home-page .hero h1 { max-width: 9em; }
-.home-page .hero .lead { font-size: 18px; max-width: 34ch; margin-bottom: 28px; }
-.home-page .hero-contact { max-width: 33ch; font-size: 15px; line-height: 1.6; padding-top: 22px; border-top: 1px solid var(--line); }
+.home-page .welcome-intro { margin: 0; font-size: 17px; }
+.home-page .question-heading { margin: 0 0 26px; font-size: 24px; }
+.home-page .hero h1 { max-width: 10em; }
+.home-page .hero .lead { font-size: 17px; max-width: 35ch; margin-bottom: 28px; }
+.home-page .hero-contact { max-width: 35ch; font-size: 15px; line-height: 1.65; padding: 0 0 0 16px; border: 0; border-left: 2px solid #f4753d; }
 .home-page .hero-contact a { color: var(--cobalt); }
-.home-page .esencial { margin: 0; border-top: 2px solid var(--cobalt); }
-.home-page .esen summary { gap: 18px; padding: 20px 0; align-items: baseline; font-size: 21px; line-height: 1.3; }
-.home-page .esen summary .num { font-size: 12px; letter-spacing: .02em; min-width: 22px; font-weight: 500; }
-.home-page .esen summary .q { font-weight: 500; }
+.home-page .esencial { margin: 0; border: 0; }
+.home-page .question-group + .question-group { margin-top: 30px; }
+.home-page .question-group h3 { font-size: 12px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; color: var(--cobalt); padding-bottom: 12px; border-bottom: 1px solid var(--cobalt); margin: 0; }
+.home-page .esen summary { gap: 18px; padding: 17px 0; align-items: baseline; font-size: 20px; line-height: 1.4; }
+.home-page .esen summary .q { font-weight: 400; letter-spacing: -.01em; }
 .home-page .esen summary .chev { width: 8px; height: 8px; border-color: var(--cobalt); margin-right: 4px; }
 .home-page .esen summary:hover .q { color: var(--cobalt); }
 .home-page .esen[open] { background: #e9edff; margin-inline: -16px; padding-inline: 16px; }
-.home-page .esen-body { padding: 0 0 24px 40px; }
+.home-page .esen-body { padding: 0 8px 24px 0; }
 .home-page .esen-body li { font-size: 16px; line-height: 1.6; margin-bottom: 12px; }
 .home-page .esen-links { font-size: 14px; gap: 16px; font-weight: 500; }
 .home-page .esen-body .button { padding: 9px 14px; font-size: 14px; color: var(--cobalt); border-color: var(--cobalt); }
@@ -124,7 +132,7 @@
 .refined-site .guide-card svg { grid-column: 1; grid-row: 1 / 5; width: 38px; height: 36px; margin: 3px 0 0; }
 .refined-site .guide-card > :not(svg) { grid-column: 2; }
 .refined-site .guide-card .tag { font-size: 12px; margin: 0; color: var(--muted); }
-.refined-site .guide-card h3 { font-size: 22px; font-weight: 500; margin: 0; max-width: 30ch; }
+.refined-site .guide-card h3 { font-size: 20px; font-weight: 400; margin: 0; max-width: 32ch; }
 .refined-site .guide-card p { font-size: 13px; }
 .refined-site .guide-card .go { margin-top: 8px; font-size: 14px; font-weight: 500; }
 .refined-site .urgent { gap: 26px; margin: 0 0 24px; padding: 26px 0; border-block: 1px solid var(--line); }
@@ -150,8 +158,8 @@
   border-bottom: 3px solid transparent;
   border-radius: 0;
   background: transparent;
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
   animation: none;
 }
 .library-page .choice:last-child { border-right: 0; }
@@ -182,7 +190,7 @@
   align-items: start;
 }
 .appeals-page .appeal-intro > :not(.quick-steps) { grid-column: 1; }
-.appeals-page .hero h1 { font-size: clamp(38px,4.6vw,56px); margin: 12px 0 22px; }
+.appeals-page .hero h1 { margin: 12px 0 22px; }
 .appeals-page .hero .lead { font-size: 18px; margin: 0 0 22px; }
 .appeals-page .quick-steps {
   grid-column: 2;
@@ -206,7 +214,7 @@
 .appeals-page .quick-step:hover { background: #e9edff; }
 .appeals-page .quick-step svg { width: 74px; height: 74px; }
 .appeals-page .quick-step .step-dot { top: 16px; left: 0; width: 23px; height: 23px; font-weight: 500; }
-.appeals-page .quick-step strong { font-size: 24px; font-weight: 500; }
+.appeals-page .quick-step strong { font-size: 22px; font-weight: 500; }
 .appeals-page .quick-step small { font-size: 15px; }
 .appeals-page .deadline-short { padding: 10px 0 10px 16px; border-radius: 0; border-left: 3px solid #f4753d; background: transparent; font-size: 14px; margin: 0; }
 .appeals-page .hero .actions { gap: 14px 22px; margin-top: 24px; font-size: 14px; }
@@ -238,7 +246,6 @@
   .refined-site :is(.site-header,header) { flex-wrap: wrap; gap: 16px; }
   .refined-site :is(.site-header nav,.header-links) { width: 100%; }
   .home-page .home-intro { gap: 32px; grid-template-columns: minmax(0,.9fr) minmax(0,1.3fr); }
-  .home-page .hero h1 { font-size: 44px; }
   .appeals-page .appeal-intro { gap: 0 30px; }
   .appeals-page .quick-step { grid-template-columns: 60px minmax(0,1fr) 12px; gap: 12px; }
   .appeals-page .quick-step svg { width: 58px; height: 64px; }
@@ -250,19 +257,20 @@
   .refined-site :is(.logo,.brand) { font-size: 22px; }
   .refined-site :is(.logo img,.brand img) { width: 64px; }
   .refined-site :is(.site-header nav,.header-links) { font-size: 12px; gap: 8px 16px; }
-  .refined-site .hero h1 { font-size: clamp(34px,8.8vw,44px); max-width: 18ch; margin-top: 12px; margin-bottom: 18px; }
+  .refined-site .hero h1 { font-size: clamp(32px,8.5vw,38px); max-width: 20ch; margin-top: 12px; margin-bottom: 18px; }
   .refined-site .hero .lead { font-size: 17px; }
   .home-page .home-intro { display: block; padding: 16px 0 30px; }
   .home-page .intro-copy { position: static; }
   .home-page .hero h1 { max-width: 10em; }
   .home-page .hero .lead { max-width: 42ch; margin-bottom: 20px; }
-  .home-page .hero-contact { max-width: 48ch; border: 0; padding: 0; margin: 0 0 26px; font-size: 14px; }
+  .home-page .hero-contact { max-width: 48ch; padding: 0 0 0 12px; margin: 0 0 30px; font-size: 14px; }
+  .home-page .question-heading { font-size: 22px; margin-bottom: 22px; }
   .home-page .esen summary { font-size: 19px; padding: 18px 0; gap: 14px; }
-  .home-page .esen-body { padding-left: 36px; }
+  .home-page .esen-body { padding-left: 0; }
   .home-page section[id$="-abogado"] { display: block; }
   .home-page section[id$="-abogado"] p { font-size: 17px; }
   .refined-site .library-grid { grid-template-columns: 1fr; }
-  .refined-site .guide-card h3 { font-size: 21px; }
+  .refined-site .guide-card h3 { font-size: 20px; }
   .refined-site .urgent { grid-template-columns: 1fr 1fr; gap: 24px 18px; }
   .refined-site .urgent a { padding-left: 10px; }
   .refined-site :is(.consult,.closing) { padding: 26px 22px; }
