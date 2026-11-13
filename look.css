@@ -1,0 +1,13 @@
+/* Liebre Law · look (11/2026): Helvetica headings, no gradient wash, square corners, hairlines. Loaded last on every page. */
+:root{--head:'Helvetica Neue',Helvetica,'Archivo',Arial,sans-serif}
+h1,h2,h3,.hero h1,.guide-card h3,.path-card strong,.urgent a strong,.kf strong,.quick-step strong,.card h3,.brand span,.logo{font-family:var(--head);font-weight:700;letter-spacing:-.025em}
+h1{letter-spacing:-.035em}
+.hero::before,.hero:before{display:none!important}
+.hero{background:none!important}
+.guide-card,.path-card,.urgent a,.kf,.consult,.card,.quick-step,.library-links a,.callout,.button,.cta,.site-footer,.deadline,.esen-body .button,.section-nav a,.fold-controls button,.language-bar nav a,.language-switch a,.sticky-contact,.liebre-quick-contact a,.completas li,.full-list li,.offer,.note-box,.steps li,details.fold,.header-contact,table.cmp,.cmp th,.cmp td,.check-progress,.choice-grid a,.path-cards a,.summary-card,.esencial-box{border-radius:0!important}
+.urgent a{background:transparent;border:1px solid #cfd3de;border-top:2px solid #111a35}.urgent .appeal{border-top-color:#f4753d;background:transparent}.urgent .rights{border-top-color:#1b7a4a;background:transparent}
+.guide-card,.path-card,.kf,.card{border:1px solid #cfd3de;box-shadow:none}
+.esencial-box{border-top:2px solid #111a35;border-bottom:1px solid #cfd3de;padding:18px 0 14px;margin:0 0 22px}
+.esencial-box h2{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#2349e8;margin:0 0 10px}
+.esencial-box ol{margin:0;padding-left:22px}.esencial-box li{font-size:17.5px;line-height:1.5;margin:0 0 8px;max-width:720px}
+@media(max-width:600px){.esencial-box li{font-size:16px}}
