@@ -197,3 +197,19 @@ main>section[style]{background:none!important;border:0!important;border-bottom:1
 .jump{background:#fff!important}
 .hero-contact a{color:#111}
 .hero-contact{color:#111!important;font-weight:400!important}
+
+/* cobalt back as the single accent (11/12/2026): logo, links, buttons */
+:root{--blue:#2349e8;--cobalt:#2349e8;--deep:#2349e8}
+.site-header .logo,.brand{color:var(--blue)!important}
+main a:not(.button):not(.cta):not(.guide-card):not(.choice):not(.sticky-contact):not(.quick-step):not(.card):not(.tool-card),.esen-links a,.hero-contact a,.quick-step strong,.urgent a strong,.urgent .rights strong,.path-card strong,.full-list strong,.guide-card:hover h3,a.card:hover h3,.tool-card:hover h3,.hero-index>a,.site-header nav a:hover,.header-links a:hover{color:var(--blue)}
+.urgent .appeal strong{color:var(--warn)}
+.language-bar a[aria-current=true],.language-switch a[aria-current=true],.top a[aria-current=true],.topbar button[aria-pressed=true],.language-options button[aria-pressed=true]{color:var(--blue)!important}
+.button,.cta,.esen-body .button,.consult .actions .button,.primary,.hero-actions .primary.start,.offer .cta,.whatsapp-contact.cta,a.cta.whatsapp-contact,.liebre-quick-contact a.quick-whatsapp{background:var(--blue)!important;border-color:var(--blue)!important;color:#fff!important}
+.button:hover,.cta:hover,.esen-body .button:hover,.consult .actions .button:hover,.primary:hover,a.cta.whatsapp-contact:hover{background:#fff!important;color:var(--blue)!important;border-color:var(--blue)!important}
+header .cta{background:none!important;color:var(--blue)!important;border:0!important}
+.sticky-contact{color:var(--blue);border-color:var(--blue)}
+.sticky-contact:hover{background:var(--blue);color:#fff}
+.liebre-quick-contact,.liebre-quick-contact a{border-color:var(--blue)!important}
+.liebre-quick-contact a:not(.quick-whatsapp){color:var(--blue)!important}
+.choice[aria-pressed=true],.filter-row button[aria-pressed=true]{background:var(--blue);border-color:var(--blue)}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline-color:var(--blue)}
