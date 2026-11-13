@@ -1,0 +1,66 @@
+/* Appeal review: familiar Liebre colors and a short route to a conversation. */
+.opinion-page .opinion-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr);
+  gap: clamp(32px, 6vw, 78px);
+  padding: 50px 0 44px;
+  align-items: start;
+}
+.opinion-page .opinion-intro h1 { max-width: 14ch; font-size: clamp(38px, 4.2vw, 52px); }
+.opinion-page .opinion-intro .lead { max-width: 31ch; margin-bottom: 18px; color: var(--ink); }
+.opinion-page .personal-intro { max-width: 44ch; font-size: 16px; color: var(--muted); }
+.opinion-page .opinion-intro .actions { gap: 16px 22px; }
+.opinion-page .opinion-intro .actions > a:not(.button) { font-size: 14px; }
+.opinion-page .button { background: var(--cobalt); color: white; border-radius: 3px; padding: 12px 18px; }
+.opinion-page .fee-note { font-size: 13px; max-width: 48ch; margin-top: 16px; }
+.opinion-page .situation-list { border-top: 2px solid var(--cobalt); padding-top: 18px; margin-top: 12px; }
+.opinion-page .situation-list h2 { font-size: 20px; margin: 0 0 16px; }
+.opinion-page .situation-link { display: grid; grid-template-columns: 26px minmax(0, 1fr) 16px; gap: 12px; padding: 23px 0; border-bottom: 1px solid var(--line); text-decoration: none; }
+.opinion-page .situation-link strong { display: block; font-size: 19px; font-weight: 500; line-height: 1.4; }
+.opinion-page .situation-link small { display: block; font-size: 14px; color: var(--muted); line-height: 1.5; margin-top: 7px; }
+.opinion-page .situation-number { color: var(--cobalt); font-size: 12px; padding-top: 5px; }
+.opinion-page .situation-arrow { color: var(--cobalt); padding-top: 2px; }
+.opinion-page .situation-link:hover strong { color: var(--cobalt); text-decoration: underline; text-underline-offset: 5px; }
+.opinion-page .deadline-note { border-left: 3px solid #f4753d; padding: 6px 0 6px 22px; margin-bottom: 38px; max-width: 900px; }
+.opinion-page .deadline-note h2 { font-size: 19px; margin: 0 0 8px; }
+.opinion-page .deadline-note p { font-size: 15px; color: var(--muted); margin: 0; }
+.opinion-page .opinion-paths { border-top: 1px solid var(--line); }
+.opinion-page .opinion-panel { border-bottom: 1px solid var(--line); scroll-margin-top: 24px; }
+.opinion-page .opinion-panel > summary { display: flex; gap: 20px; justify-content: space-between; list-style: none; padding: 21px 4px; cursor: pointer; font-size: 22px; line-height: 1.35; }
+.opinion-page .opinion-panel > summary::-webkit-details-marker { display: none; }
+.opinion-page .opinion-panel > summary span:last-child { color: var(--cobalt); font-size: 24px; }
+.opinion-page .opinion-panel[open] > summary { color: var(--cobalt); }
+.opinion-page .opinion-panel[open] > summary span:last-child { transform: rotate(45deg); }
+.opinion-page .opinion-panel-body { max-width: 820px; padding: 0 4px 30px; }
+.opinion-page .opinion-panel-body h3 { font-size: 20px; }
+.opinion-page .opinion-panel-body li { margin: 12px 0; }
+.opinion-page .opinion-panel-body .actions { font-size: 15px; }
+.opinion-page .content { margin-top: 42px; }
+.opinion-page .review-process { display: grid; grid-template-columns: .8fr 1.4fr; gap: 40px; padding-block: 18px; }
+.opinion-page .review-process h2 { margin-top: 12px; }
+.opinion-page .review-process ol { padding: 0; margin: 0; list-style: none; }
+.opinion-page .review-process li { display: grid; grid-template-columns: 30px 1fr; gap: 18px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+.opinion-page .step-count { color: var(--cobalt); font-size: 13px; padding-top: 3px; }
+.opinion-page .review-process h3 { font-size: 19px; margin: 0 0 7px; }
+.opinion-page .review-process p { font-size: 15px; color: var(--muted); margin: 0; }
+.opinion-page .gather-review { border-block: 1px solid var(--line); display: grid; grid-template-columns: 1.4fr .8fr; align-items: center; gap: 40px; padding-block: 24px; }
+.opinion-page .gather-review img { width: 100%; height: auto; max-width: 280px; justify-self: center; }
+.opinion-page .gather-review p { color: var(--muted); }
+.opinion-page .gather-review li { margin: 12px 0; }
+.opinion-page .faq { max-width: 900px; }
+.opinion-page .faq details { border-radius: 0; }
+.opinion-page .consult .note { color: white; opacity: .9; font-size: 13px; }
+.opinion-page .review-links { display: flex; flex-wrap: wrap; gap: 18px 32px; }
+.opinion-page .source-list summary { cursor: pointer; font-size: 14px; }
+.opinion-page .source-list .note { font-size: 12px; }
+@media (max-width: 760px) {
+ .opinion-page .opinion-intro { grid-template-columns: 1fr; gap: 20px; padding-top: 26px; }
+ .opinion-page .opinion-intro h1 { max-width: 16ch; font-size: clamp(34px, 8.5vw, 45px); }
+ .opinion-page .situation-list { margin-top: 0; }
+ .opinion-page .situation-link { padding-block: 18px; }
+ .opinion-page .opinion-panel > summary { font-size: 20px; }
+ .opinion-page .review-process { grid-template-columns: 1fr; gap: 0; }
+ .opinion-page .gather-review { grid-template-columns: 1fr; gap: 8px; }
+ .opinion-page .gather-review img { max-width: 220px; }
+ .opinion-page .consult { padding: 26px 22px; }
+}
