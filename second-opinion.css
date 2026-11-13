@@ -13,6 +13,7 @@
 .opinion-page .opinion-intro .actions > a:not(.button) { font-size: 14px; }
 .opinion-page .button { background: var(--cobalt); color: white; border-radius: 3px; padding: 12px 18px; }
 .opinion-page .fee-note { font-size: 13px; max-width: 48ch; margin-top: 16px; }
+.opinion-page .attorney-background { max-width: 48ch; margin: 16px 0 22px; font-size: 14px; line-height: 1.65; color: var(--muted); }
 .opinion-page .situation-list { border-top: 2px solid var(--cobalt); padding-top: 18px; margin-top: 12px; }
 .opinion-page .situation-list h2 { font-size: 20px; margin: 0 0 16px; }
 .opinion-page .situation-link { display: grid; grid-template-columns: 26px minmax(0, 1fr) 16px; gap: 12px; padding: 23px 0; border-bottom: 1px solid var(--line); text-decoration: none; }
@@ -53,6 +54,17 @@
 .opinion-page .review-links { display: flex; flex-wrap: wrap; gap: 18px 32px; }
 .opinion-page .source-list summary { cursor: pointer; font-size: 14px; }
 .opinion-page .source-list .note { font-size: 12px; }
+ /* Keep privacy settings accessible below the footer, clear of the reading area. */
+ .opinion-page .site-footer { padding-bottom: 20px; }
+ .opinion-page #liebre-privacy-settings {
+   position: static; display: block; width: fit-content;
+   margin: 0 max(20px, calc((100% - 1100px) / 2)) calc(76px + env(safe-area-inset-bottom, 0px));
+   padding: 8px 0; min-height: 44px;
+   border: 0; border-radius: 0; box-shadow: none; background: transparent;
+   color: var(--muted); font-size: 13px; font-weight: 400;
+   text-decoration: underline; text-underline-offset: 3px;
+ }
+
 @media (max-width: 760px) {
  .opinion-page .opinion-intro { grid-template-columns: 1fr; gap: 20px; padding-top: 26px; }
  .opinion-page .opinion-intro h1 { max-width: 16ch; font-size: clamp(34px, 8.5vw, 45px); }
@@ -63,4 +75,9 @@
  .opinion-page .gather-review { grid-template-columns: 1fr; gap: 8px; }
  .opinion-page .gather-review img { max-width: 220px; }
  .opinion-page .consult { padding: 26px 22px; }
+ .opinion-page .sticky-contact {
+   right: 12px; bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+   display: inline-flex; align-items: center; min-height: 44px;
+   box-sizing: border-box; padding: 8px 12px; font-size: 13px;
+ }
 }
