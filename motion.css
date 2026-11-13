@@ -5,6 +5,6 @@
 @keyframes vt-out{to{opacity:0;transform:translateY(-6px)}}
 @keyframes vt-in{from{opacity:0;transform:translateY(14px)}}
 a.button,a.cta,.path-card,.step-card,.card,button.choice{transition:transform .22s ease,box-shadow .22s ease,filter .22s ease}
-a.button:hover,a.cta:hover{transform:translateY(-2px);box-shadow:0 8px 20px #2349e833;filter:brightness(1.04)}
-.path-card:hover,.step-card:hover,.card:hover{transform:translateY(-3px);box-shadow:0 10px 26px #111a3514}
+a.button:hover,a.cta:hover{transform:translateY(-2px);box-shadow:0 8px 20px #11111133;filter:brightness(1.04)}
+.path-card:hover,.step-card:hover,.card:hover{transform:translateY(-3px);box-shadow:0 10px 26px #11111114}
 @media(prefers-reduced-motion:reduce){::view-transition-old(root),::view-transition-new(root){animation:none}a.button:hover,a.cta:hover,.path-card:hover,.step-card:hover,.card:hover{transform:none}}

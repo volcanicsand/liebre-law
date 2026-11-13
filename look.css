@@ -1,13 +1,199 @@
-/* Liebre Law · look (11/2026): Helvetica headings, no gradient wash, square corners, hairlines. Loaded last on every page. */
-:root{--head:'Helvetica Neue',Helvetica,'Archivo',Arial,sans-serif}
-h1,h2,h3,.hero h1,.guide-card h3,.path-card strong,.urgent a strong,.kf strong,.quick-step strong,.card h3,.brand span,.logo{font-family:var(--head);font-weight:700;letter-spacing:-.025em}
-h1{letter-spacing:-.035em}
+/* Liebre Law · look (11/12/2026): black on white, Helvetica, hairlines. No accent blue, no icons, no cards, no motion. Loaded last on every page. */
+:root{--head:'Helvetica Neue',Helvetica,'Archivo',Arial,sans-serif;--k:#111;--mut:#5a5a5a;--hair:#d9d9d6;--warn:#b3360b;
+--ink:#111;--deep:#111;--cobalt:#111;--paper:#fff;--lime:#fff;--sand:#f4f4f1;--muted:#5a5a5a;--line:#d9d9d6;--accent:#b3360b}
+html{scroll-behavior:auto}
+body{background:#fff;color:var(--k);font-family:'Helvetica Neue',Helvetica,Arial,sans-serif}
+h1,h2,h3,.hero h1,.guide-card h3,.path-card strong,.urgent a strong,.kf strong,.quick-step strong,.card h3,.brand span,.logo{font-family:var(--head);font-weight:700;letter-spacing:-.02em;color:var(--k)}
+h1{letter-spacing:-.03em}
+a{color:inherit}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid #111;outline-offset:3px}
+
+/* motion off */
+@view-transition{navigation:none}
+*,*::before,*::after{animation:none!important;transition:none!important}
+.reveal{opacity:1!important;transform:none!important}
+a:hover,button:hover,.choice:hover,.guide-card:hover,.path-card:hover,.card:hover,.step-card:hover,.related-grid a:hover,.urgent a:hover,.full-list a:hover,.button:hover,.cta:hover,.sticky-contact:hover{transform:none!important;box-shadow:none!important;filter:none!important}
+
+/* square, flat */
+*{border-radius:0!important}
+.guide-card,.path-card,.kf,.card,.choice,.step-panel,.followup,.consult,.callout,.timing,.checklist label,.related-grid a,.full-list a,.urgent a,.detail table,table.cmp,.sticky-contact{box-shadow:none!important}
 .hero::before,.hero:before{display:none!important}
 .hero{background:none!important}
-.guide-card,.path-card,.urgent a,.kf,.consult,.card,.quick-step,.library-links a,.callout,.button,.cta,.site-footer,.deadline,.esen-body .button,.section-nav a,.fold-controls button,.language-bar nav a,.language-switch a,.sticky-contact,.liebre-quick-contact a,.completas li,.full-list li,.offer,.note-box,.steps li,details.fold,.header-contact,table.cmp,.cmp th,.cmp td,.check-progress,.choice-grid a,.path-cards a,.summary-card,.esencial-box{border-radius:0!important}
-.urgent a{background:transparent;border:1px solid #cfd3de;border-top:2px solid #111a35}.urgent .appeal{border-top-color:#f4753d;background:transparent}.urgent .rights{border-top-color:#1b7a4a;background:transparent}
-.guide-card,.path-card,.kf,.card{border:1px solid #cfd3de;box-shadow:none}
-.esencial-box{border-top:2px solid #111a35;border-bottom:1px solid #cfd3de;padding:18px 0 14px;margin:0 0 22px}
-.esencial-box h2{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#2349e8;margin:0 0 10px}
+
+/* language switch: plain text, top right */
+.language-bar{background:none;color:var(--k);border-bottom:1px solid var(--hair)}
+.language-bar nav{gap:18px;padding:8px 24px;font-size:14px}
+.language-bar a{border:0;padding:0;color:var(--mut);text-decoration:none}
+.language-bar a[aria-current=true]{background:none;color:var(--k);font-weight:700;text-decoration:underline;text-underline-offset:4px}
+
+/* header */
+.site-header{border-bottom:1px solid var(--k)}
+.site-header .logo{color:var(--k);font-size:20px;letter-spacing:.02em;font-weight:700}
+.logo img{width:64px}
+.site-header nav a{text-decoration:none}
+.site-header nav a:hover{text-decoration:underline}
+
+/* labels above headings: plain, small */
+.eyebrow{text-transform:none;letter-spacing:0;font-weight:400;font-size:14px;color:var(--mut)}
+.hero .eyebrow{font-size:14px}
+.lead{color:#333}
+.note,.single-language-note{color:var(--mut)}
+
+/* buttons */
+.button,.cta,.esen-body .button,.consult .actions .button{display:inline-block;background:#111;color:#fff;border:1px solid #111;padding:11px 18px;font-weight:700;text-decoration:none}
+.button:hover,.cta:hover,.esen-body .button:hover,.consult .actions .button:hover{background:#fff;color:#111;border-color:#111}
+.sticky-contact{background:#fff;color:#111;border:1px solid #111;padding:9px 14px;font-size:14px;font-weight:700}
+.sticky-contact:hover{background:#111;color:#fff}
+
+/* landing list */
+.esencial{border-top:1px solid #111}
+.esen{border-bottom:1px solid var(--hair)}
+.esen summary{padding:16px 0;font-size:22px;color:#111}
+.esen summary .num{display:none}
+.esen summary .q{font-weight:700}
+.esen[open] summary{color:#111}
+.esen summary .chev,.esen[open] summary .chev{border-color:#111}
+.esen-body{padding:0 0 22px 0}
+.esen-links a{font-weight:400}
+
+/* urgent links: four plain columns under a rule */
+.urgent{gap:28px;margin:26px 0 10px}
+.urgent a,.urgent .appeal,.urgent .rights{background:none;border:0;border-top:1px solid #111;padding:12px 0 0}
+.urgent a strong,.urgent .rights strong{color:#111;font-size:17px;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.urgent .appeal strong{color:var(--warn)}
+.urgent span{color:var(--mut)}
+
+/* guide index: rows, not cards */
+.library-grid{display:block;border-top:1px solid #111;max-width:860px}
+.guide-card,.library-grid .guide-card{display:block;padding:13px 0;border:0;border-bottom:1px solid var(--hair);background:none}
+.guide-card:hover{background:none;border-color:var(--hair)}
+.guide-card:hover h3{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.guide-card svg,.choice svg,.path-card svg,.guide-card .go,.path-card .go{display:none!important}
+.guide-card .tag{display:block;font-size:13px;color:var(--mut);margin:0 0 2px}
+.guide-card h3{font-size:19px;margin:0;line-height:1.3}
+.guide-card p{font-size:14px;color:var(--mut);margin:2px 0 0}
+.full-list{display:block;border-top:1px solid #111;max-width:860px}
+.full-list a{background:none;border:0;border-bottom:1px solid var(--hair);padding:12px 0}
+.full-list strong{color:#111}
+.full-list a:hover strong{text-decoration:underline}
+.library-links{display:block}.library-links a{display:block;margin:0 0 8px}
+
+/* routing choices, path cards, panels */
+.choice{background:none;border:1px solid #111;font-weight:700}
+.choice:hover{background:#f4f4f1}
+.choice[aria-pressed=true]{background:#111;color:#fff;border:1px solid #111}
+.followup{background:none;border:1px solid var(--hair);border-top:1px solid #111}
+.related-grid a{background:none;border:1px solid var(--hair)}
+.path-card,.path-card:nth-child(2n),.path-card:nth-child(3n){background:none;border:0;border-top:1px solid #111;padding:14px 0}
+.path-card .badge{position:static;align-self:flex-start;background:none;color:var(--mut);padding:0;font-weight:400}
+.path-card strong{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.step-panel,.step-panel[open]{border:0;border-bottom:1px solid var(--hair);background:none;padding:16px 0;margin:0}
+.step-panel .num{background:none;color:#111;min-width:22px;height:auto;display:inline;font-size:inherit}
+.step-panel .num::after{content:"."}
+.step-panel summary{gap:8px}
+.step-panel summary:after{color:#111;font-weight:400}
+.step-body{padding-left:30px;color:#333}
+.checklist label{background:none;border:1px solid var(--hair)}
+.checklist label:has(input:checked){background:#f4f4f1}
+.checklist input{accent-color:#111}
+.filter-row button{background:none;border:1px solid var(--hair)}
+.filter-row button[aria-pressed=true]{background:#111;color:#fff;border-color:#111}
+.search-label input{border:1px solid #111}
+.quick-links a,.section-nav a{border:0;background:none;padding:0;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.section-nav{gap:6px 18px;background:#fff;border-block:1px solid var(--hair)}
+.timing,.callout{background:none;border-left:3px solid #111;padding:4px 0 4px 16px}
+.faq details{border-bottom:1px solid var(--hair)}
+.faq details p{color:#333}
+
+/* detail pages */
+.detail{border-bottom:1px solid var(--hair)}
+.detail h2 .n{display:inline;background:none;color:#111;min-width:0;height:auto;font-size:inherit}
+.detail h2 .n::after{content:"."}
+.detail h2{gap:8px}
+.detail h3{color:#111}
+.detail p,.detail li{color:#222}
+.detail ol.steps li{background:none;border:0;border-bottom:1px solid var(--hair);padding:12px 0 12px 34px;margin:0}
+.detail ol.steps li::before{background:none;color:#111;left:0;top:12px;width:auto;height:auto;display:block;font-size:inherit;font-weight:700;content:counter(s) "."}
+.detail table,table.cmp{background:none;border:0;border-top:1px solid #111}
+.detail th,table.cmp thead th{background:none;color:#111;border-bottom:1px solid #111;text-transform:none;letter-spacing:0;font-size:14px}
+.detail td,table.cmp td{border-color:var(--hair)}
+table.cmp td strong{color:#111}
+.kf{background:none;border:0;border-top:1px solid #111;padding:12px 0 0}
+.esencial-box{border-top:1px solid #111;border-bottom:1px solid var(--hair);padding:18px 0 14px;margin:0 0 22px}
+.esencial-box h2{font-size:14px;letter-spacing:0;text-transform:none;color:var(--mut);font-weight:400;margin:0 0 10px}
 .esencial-box ol{margin:0;padding-left:22px}.esencial-box li{font-size:17.5px;line-height:1.5;margin:0 0 8px;max-width:720px}
-@media(max-width:600px){.esencial-box li{font-size:16px}}
+
+/* contact section: plain, under a rule */
+.consult{background:none;color:#111;border-top:1px solid #111;padding:28px 0 8px;margin:36px 0 0}
+.consult h2{color:#111}
+.consult .note{color:var(--mut)}
+.consult a{color:#111}
+section.content{border-bottom:1px solid var(--hair)}
+.site-footer{border-top:1px solid #111;color:var(--mut)}
+.site-footer strong{color:#111}
+
+/* privacy notice (analytics.js) */
+#liebre-privacy-panel{background:#fff!important;color:#111!important;border:1px solid #111!important;box-shadow:none!important}
+#liebre-privacy-panel h2,#liebre-privacy-panel p,#liebre-privacy-panel a{color:#111!important}
+#liebre-privacy-panel button,#liebre-privacy-settings{background:#fff!important;color:#111!important;border:1px solid #111!important;box-shadow:none!important}
+#liebre-privacy-panel .liebre-privacy-close{border:0!important}
+#liebre-privacy-settings{border-color:var(--hair)!important;color:var(--mut)!important}
+
+@media(max-width:760px){.logo img{width:48px}.site-header .logo{font-size:18px}.language-bar nav{justify-content:flex-end;padding:8px 20px}.urgent{gap:16px}.step-body{padding-left:0}}
+@media(max-width:600px){.esen summary{font-size:19px;padding:14px 0}.esencial-box li{font-size:16px}}
+
+/* older pages (appeals, tools, statistics, employment) */
+.top,.topbar{background:none!important;color:#111!important;border-bottom:1px solid var(--hair)}
+.top nav,.topbar{font-size:14px;letter-spacing:0}
+.top span,.topbar>span{display:none}
+.topbar{justify-content:flex-end}
+.language-switch a,.top nav a{border:0!important;padding:0!important;min-height:0!important;color:var(--mut);text-decoration:none;background:none!important}
+.language-switch a[aria-current=true],.top a[aria-current=true]{color:#111!important;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+.topbar button,.language-options button{background:none!important;border:0!important;color:var(--mut)!important;padding:0 0 0 14px!important;min-height:0;font-size:14px}
+.topbar button[aria-pressed=true],.language-options button[aria-pressed=true]{color:#111!important;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+header{border-bottom:1px solid #111!important}
+.brand{font-family:var(--head)!important;font-size:20px!important;font-weight:700;letter-spacing:.02em!important;text-transform:uppercase;color:#111!important;gap:12px!important}
+.brand img,.brand svg,.brand .hare-mark{width:64px!important;height:auto!important}
+.brand small{font-family:inherit;font-size:12px;letter-spacing:0;text-transform:none;font-weight:400;color:var(--mut);margin-top:2px}
+header .cta{background:none!important;color:#111!important;border:0!important;padding:0!important;min-height:0!important;font-weight:400;text-decoration:underline;font-size:14px}
+.header-contact{font-weight:400}
+.primary,.hero-actions .primary.start,.cta,.offer .cta{background:#111;color:#fff;border:1px solid #111}
+.primary:hover,.hero-actions .primary.start:hover,.cta:hover{background:#fff;color:#111;border-color:#111}
+.secondary{border-color:#111;color:#111}
+.quick-step{background:none;border:0;border-top:1px solid #111;padding:14px 0}
+.quick-step svg,.quick-step>span[aria-hidden]:last-child,.card .arrow,.hero-art,.index-label,.tool-card .number,.hero-index img{display:none!important}
+.step-dot{display:inline;background:none;color:#111;width:auto;height:auto;font-weight:700}
+.step-dot::after{content:"."}
+.quick-step strong{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.deadline-short{background:none!important;padding:0!important;color:#111}
+.jump{box-shadow:none!important;background:none!important;gap:6px 18px;font-weight:400}
+.jump a{border:0!important;background:none!important;padding:0!important;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.steps li{border:0;border-bottom:1px solid var(--hair);background:none}
+.steps li:before,.steps li::before{background:none!important;color:#111;width:auto;height:auto;line-height:inherit;font-weight:700;font-size:21px;text-align:left;content:counter(steps) "."}
+.aside,.scope,.data,.deadline,.pricing-card,.why,.hero-art{background:none!important}
+.aside,.scope,.data{border:0!important;border-top:1px solid #111!important;padding:18px 0!important}
+.deadline{border-left:3px solid #111!important;padding:4px 0 4px 18px!important}
+.card,.tool-card,.check-panel,.chart-panel{background:none!important;border:0!important;border-top:1px solid #111!important;padding:14px 0!important;min-height:0!important}
+a.card:hover,.tool-card:hover{background:none!important}
+a.card:hover h3,.tool-card:hover h3{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.pricing .card:last-child,.pricing .card:last-child p{background:none!important;color:#111!important}
+.closing,.process,.offer{background:none!important;color:#111!important;border-top:1px solid #111;padding:28px 0!important}
+.closing .note,.closing a{color:#111!important}
+.hero-index{background:none!important;color:#111!important;padding:0!important;border-top:1px solid #111}
+.hero-index>a{font-size:19px;letter-spacing:0;border-top:0;border-bottom:1px solid var(--hair);padding:12px 0;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.hero-index>a:hover{color:#111}
+.topic{border-top:1px solid #111}
+.data-section{background:none!important;margin-left:0!important;margin-right:0!important;padding-left:0!important;padding-right:0!important}
+.big-number{color:#111;font-size:64px;letter-spacing:-.03em}
+.external{color:var(--mut)}
+.stat-overview a{background:none!important;border:0!important;border-top:1px solid #111!important;padding:12px 0!important}
+.language-divider{border-top:1px solid #111}
+.liebre-quick-contact{box-shadow:none!important;border:1px solid #111!important;padding:6px!important}
+.liebre-quick-contact a.quick-whatsapp{font-size:14px}
+main>section[style]{background:none!important;border:0!important;border-bottom:1px solid var(--hair)!important;padding:20px 0!important;margin:0!important}
+.quick-steps:after,.quick-steps::after{display:none!important}
+.quick-step,.quick-step:nth-child(2){display:block!important;background:none!important;min-height:0!important;padding:14px 0!important}
+.quick-step .step-dot{position:static!important;display:inline!important;float:left;margin-right:8px;background:none!important;color:#111!important;border:0!important;width:auto!important;height:auto!important;font-size:18px!important;line-height:1.3}
+.jump{background:#fff!important}
+.hero-contact a{color:#111}
+.hero-contact{color:#111!important;font-weight:400!important}
