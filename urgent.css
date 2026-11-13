@@ -1,11 +1,11 @@
 .urgent{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:14px 0 6px}
-.urgent a{display:block;background:#fff;border:1.5px solid #d9d9d6;border-radius:14px;padding:14px 16px;text-decoration:none;color:#111111;box-shadow:0 1px 0 rgba(20,30,80,.04);transition:transform .18s ease,border-color .18s ease}
-.urgent a:hover{transform:translateY(-2px);border-color:#111111}
-.urgent strong{display:block;color:#111111;font-size:17px;margin-bottom:4px}
-.urgent span{display:block;font-size:14px;line-height:1.4;color:#5a5a5a}
+.urgent a{display:block;background:#fff;border:1.5px solid #c9d2f7;border-radius:14px;padding:14px 16px;text-decoration:none;color:#1a2140;box-shadow:0 1px 0 rgba(20,30,80,.04);transition:transform .18s ease,border-color .18s ease}
+.urgent a:hover{transform:translateY(-2px);border-color:#2349e8}
+.urgent strong{display:block;color:#2349e8;font-size:17px;margin-bottom:4px}
+.urgent span{display:block;font-size:14px;line-height:1.4;color:#50586b}
 .urgent .appeal{border-color:#f5b98a;background:#fff8f1}.urgent .appeal strong{color:#d2581b}
 .urgent .rights{border-color:#8fd0b0;background:#f1fbf5}.urgent .rights strong{color:#1b7a4a}
 @media print{.urgent{display:none}}
 
-.full-list{list-style:none;margin:14px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}.full-list a{display:block;background:white;border:1px solid #d9d9d6;border-radius:12px;padding:12px 14px;text-decoration:none;color:inherit;transition:border-color .15s,transform .15s}.full-list a:hover{border-color:#111111;transform:translateY(-1px)}.full-list strong{display:block;color:#111111;margin-bottom:3px}.full-list span{font-size:14px;color:#5a5a5a}
+.full-list{list-style:none;margin:14px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}.full-list a{display:block;background:white;border:1px solid #dce0eb;border-radius:12px;padding:12px 14px;text-decoration:none;color:inherit;transition:border-color .15s,transform .15s}.full-list a:hover{border-color:#2349e8;transform:translateY(-1px)}.full-list strong{display:block;color:#2349e8;margin-bottom:3px}.full-list span{font-size:14px;color:#50586b}
 .completas{margin-top:28px;padding-top:18px;border-top:1px solid #e3e6ef}.completas h2{font-size:22px;margin:0 0 6px}
