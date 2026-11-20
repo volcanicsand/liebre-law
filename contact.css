@@ -1,0 +1,121 @@
+/* Direct contact links use the existing bilingual page selection. */
+html[lang="es"] :is(.contact-nav, .contact-dock span)[lang="en"],
+html[lang="en"] :is(.contact-nav, .contact-dock span)[lang="es"] {
+  display: none;
+}
+
+.site-header nav a.contact-nav {
+  color: var(--cobalt, #2349e8);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.contact-actions {
+  display: grid;
+  gap: 8px;
+}
+
+.contact-actions a {
+  display: grid;
+  align-content: center;
+  min-height: 44px;
+  min-width: 0;
+  padding: 5px 8px;
+  border: 1px solid var(--cobalt, #2349e8);
+  background: #fff;
+  color: var(--cobalt, #2349e8);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contact-actions a:hover {
+  background: #e9edff;
+}
+
+.contact-actions .contact-whatsapp {
+  background: #147348;
+  border-color: #147348;
+  color: #fff;
+}
+
+.contact-actions .contact-whatsapp:hover {
+  background: #105d3a;
+  border-color: #105d3a;
+}
+
+.contact-actions a:focus-visible {
+  outline: 2px solid var(--cobalt, #2349e8);
+  outline-offset: 2px;
+}
+
+.home-contact-actions {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 350px;
+}
+
+.contact-number {
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.contact-note {
+  margin: 10px 0 0;
+  color: var(--muted, #50586b);
+  font-size: 14px;
+}
+
+.contact-dock {
+  position: fixed;
+  z-index: 50;
+  right: 16px;
+  bottom: 12px;
+  grid-template-columns: 1.25fr repeat(3, 1fr);
+  width: min(372px, calc(100% - 32px));
+  padding: 8px;
+  background: #fff;
+  border: 1px solid var(--line, #d6d8e1);
+  box-shadow: 0 4px 16px #111a351a;
+}
+
+@media (max-width: 760px) {
+  html:has(.contact-dock) {
+    scroll-padding-bottom: calc(122px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .contact-dock {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    gap: 6px;
+    padding: 8px 10px calc(8px + env(safe-area-inset-bottom, 0px));
+    border-width: 1px 0 0;
+  }
+
+  .contact-dock a {
+    padding-inline: 4px;
+    font-size: 13px;
+  }
+
+  body:has(.contact-dock) #liebre-privacy-settings {
+    bottom: calc(69px + env(safe-area-inset-bottom, 0px));
+  }
+
+  body:has(.contact-dock) {
+    padding-bottom: calc(60px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+@media print {
+  .contact-dock {
+    display: none;
+  }
+
+  body:has(.contact-dock) {
+    padding-bottom: 0;
+  }
+}
