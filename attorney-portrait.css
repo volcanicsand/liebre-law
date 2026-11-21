@@ -9,6 +9,7 @@
   display: block;
   width: 128px;
   height: auto;
+  border-radius: 50%;
   flex: 0 0 auto;
 }
 .home-page .welcome-person .welcome-intro {
@@ -21,3 +22,4 @@
   .home-page .attorney-portrait { width: 104px; }
   .home-page .welcome-person .welcome-intro { max-width: none; font-size: 18px; }
 }
+
