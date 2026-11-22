@@ -50,7 +50,7 @@
 
   // Campaign labels are public marketing metadata, never intake answers.
   const campaigns = Object.freeze({
-    bia_appeals: 'US', bia_appeals_national: 'US', detention_return_us_es: 'US',
+    bia_appeals: 'US', bia_appeals_national: 'US', detention_return_us_es: 'US', strafford_detention_us_es: 'US', wyatt_detention_us_es: 'US',
     bia_appeals_tx: 'TX', bia_appeals_ny: 'NY', bia_appeals_nj: 'NJ',
     bia_appeals_ny_nj: 'NY_NJ',
     ma_immigration_es: 'MA', ma_employment_es: 'MA', ma_probono_referral: 'MA',
@@ -81,6 +81,8 @@
   function campaignCode() { return campaign || (hasAdClick ? 'google_ads_unassigned' : 'unattributed'); }
   function market() { return campaigns[campaign] || 'unassigned'; }
   function pageType() {
+    if (location.pathname === '/strafford.html') return 'strafford_detention';
+    if (location.pathname === '/wyatt.html') return 'wyatt_detention';
     if (location.pathname === '/regreso-desde-detencion.html') return 'detention_return';
     if (location.pathname === '/uscis-help.html') return 'uscis';
     if (location.pathname === '/bia-appeals.html') return 'appeals';
@@ -121,7 +123,7 @@
     if (!href || href.startsWith('#')) return;
     try {
       const url = new URL(href, location.href);
-      if (url.origin !== location.origin || !['/', '/index.html', '/bia-appeals.html', '/employment.html', '/south-africa.html', '/uscis-help.html', '/regreso-desde-detencion.html'].includes(url.pathname)) return;
+      if (url.origin !== location.origin || !['/', '/index.html', '/bia-appeals.html', '/employment.html', '/south-africa.html', '/uscis-help.html', '/regreso-desde-detencion.html', '/strafford.html', '/wyatt.html'].includes(url.pathname)) return;
       if (campaign && !url.searchParams.has('utm_campaign')) {
         url.searchParams.set('utm_campaign', campaign);
         url.searchParams.set('utm_source', campaign === 'ma_probono_referral' ? 'referral' : 'google');
