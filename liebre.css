@@ -594,3 +594,5 @@ body.liebre-site.home-page main .home-intro .home-contact-actions a[href^="mailt
  body.liebre-site.home-page main .home-intro .home-contact-actions a[href^="sms:"]{flex:1 1 100%;text-align:center}
  body.liebre-site.home-page main .home-intro .home-contact-actions a[href^="tel:"]{flex:0 1 auto;text-align:left}
 }
+body.liebre-site.home-page .urgent{grid-template-columns:1fr 1fr;gap:26px 56px}
+@media(max-width:700px){body.liebre-site.home-page .urgent{grid-template-columns:1fr}}
