@@ -2,10 +2,10 @@
    Legacy styles supply specialized forms and data tools; presentation lives here. */
 :root{--paper:#fff;--ink:#202522;--muted:#626861;--blue:#164bb0;--line:#d1d6cf;--wash:#f4f5f1;--font:Arial,Helvetica,sans-serif;--font-head:Arial,Helvetica,sans-serif;--font-body:Georgia,'Times New Roman',serif;color-scheme:light}
 html{scroll-behavior:auto;scroll-padding-top:24px}
-body.liebre-site{margin:0;background:var(--paper);color:var(--ink);border:0;font:18px/1.6 Georgia,'Times New Roman',serif;padding-bottom:0}
+body.liebre-site{margin:0;background:var(--paper);color:var(--ink);border:0;font:18px/1.6 var(--font);padding-bottom:0}
 .liebre-site *{box-sizing:border-box}
 .liebre-site [hidden]{display:none!important}
-.liebre-site :is(h1,h2,h3,h4,button,input,select,textarea,nav,.eyebrow,.note,.brand,.logo,.tag,.badge,.num){font-family:Arial,Helvetica,sans-serif}
+.liebre-site :is(h1,h2,h3,h4,button,input,select,textarea,nav,.eyebrow,.note,.brand,.logo,.tag,.badge,.num){font-family:var(--font)}
 .liebre-site :is(h1,h2,h3,h4){color:var(--ink);letter-spacing:-.025em;line-height:1.16;text-transform:none;font-weight:700}
 .liebre-site h1{font-size:clamp(34px,3.6vw,49px);max-width:23ch;margin:0 0 24px;line-height:1.08;letter-spacing:-.045em}
 .liebre-site h2{font-size:27px;margin:0 0 20px}
@@ -19,56 +19,56 @@ body.liebre-site{margin:0;background:var(--paper);color:var(--ink);border:0;font
 .liebre-site :is(button,.button,.cta,.path-card,.guide-card,.card,.tile,details,.consult,.followup,.badge,.tag,.num,input,select,textarea){border-radius:0}
 .liebre-site .skip{position:absolute;left:20px;top:-100px;z-index:50;background:white;color:var(--blue);padding:12px}
 .liebre-site .skip:focus{top:12px}
-.liebre-site :is(.language-bar,.top,.topbar){max-width:1200px;margin:0 auto;padding:14px 28px 0;background:none;color:var(--ink);border:0;min-height:0;font:12px/1.5 Arial,Helvetica,sans-serif}
+.liebre-site :is(.language-bar,.top,.topbar){max-width:1200px;margin:0 auto;padding:14px 28px 0;background:none;color:var(--ink);border:0;min-height:0;font:12px/1.5 var(--font)}
 .liebre-site :is(.language-bar nav,.language-switch){display:flex;gap:16px;justify-content:flex-end;max-width:none;padding:0}
-.liebre-site :is(.language-bar,.language-switch,.topbar) :is(a,button){border:0;background:none;color:var(--muted);padding:2px 0;min-height:24px;border-radius:0;font:12px/1.5 Arial,Helvetica,sans-serif;text-decoration:none}
+.liebre-site :is(.language-bar,.language-switch,.topbar) :is(a,button){border:0;background:none;color:var(--muted);padding:2px 0;min-height:24px;border-radius:0;font:12px/1.5 var(--font);text-decoration:none}
 .liebre-site :is(.language-bar,.language-switch,.topbar) :is([aria-current=true],[aria-pressed=true]){color:var(--ink);border-bottom:1px solid var(--ink);background:none}
 .liebre-site > header{position:relative;display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:1144px;margin:0 auto;padding:14px 0 23px;border-bottom:2px solid var(--ink);background:none;box-shadow:none}
-.liebre-site > header :is(.logo,.brand){display:flex;align-items:center;gap:14px;color:var(--ink);font:700 26px/1 Arial,Helvetica,sans-serif;letter-spacing:-.045em;text-decoration:none;white-space:nowrap}
+.liebre-site > header :is(.logo,.brand){display:flex;align-items:center;gap:14px;color:var(--ink);font:700 26px/1 var(--font);letter-spacing:-.045em;text-decoration:none;white-space:nowrap}
 .liebre-site > header :is(.logo,.brand) img{width:64px;height:39px;object-fit:contain;filter:grayscale(1) brightness(.45);margin:0}
-.liebre-site > header .brand small{display:block;color:var(--muted);font:11px/1.4 Arial,Helvetica,sans-serif;letter-spacing:0;margin-top:6px}
+.liebre-site > header .brand small{display:block;color:var(--muted);font:11px/1.4 var(--font);letter-spacing:0;margin-top:6px}
 .liebre-site > header nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:12px 22px;margin:0}
-.liebre-site > header nav a,.liebre-site .masthead-contact{padding:5px 0;background:none;border:0;color:var(--ink);font:13px/1.4 Arial,Helvetica,sans-serif;text-decoration:none;border-radius:0}
+.liebre-site > header nav a,.liebre-site .masthead-contact{padding:5px 0;background:none;border:0;color:var(--ink);font:13px/1.4 var(--font);text-decoration:none;border-radius:0}
 .liebre-site > header .contact-nav,.liebre-site .masthead-contact{color:var(--blue)}
 html[lang=es] .liebre-site .contact-nav[lang=en],html[lang=en] .liebre-site .contact-nav[lang=es]{display:none}
 .liebre-site main{max-width:1200px;margin:0 auto;padding:0 28px}
 .liebre-site :is(article,section,aside,nav,div){min-width:0}
 .liebre-site main > article{margin:0;padding:0}
 .liebre-site :is(.hero,.hero.compact,.intro){padding:42px 0 36px;margin:0;background:none;border:0;border-radius:0;display:block}
-.liebre-site :is(.lead,.lede){max-width:44em;font:21px/1.48 Georgia,'Times New Roman',serif;color:var(--ink);margin:0 0 24px}
+.liebre-site :is(.lead,.lede){max-width:44em;font:21px/1.48 var(--font);color:var(--ink);margin:0 0 24px}
 .liebre-site .eyebrow{color:var(--muted);font-size:12px;letter-spacing:.04em;font-weight:400;margin:0 0 18px;text-transform:none}
-.liebre-site :is(.note,.timing,.hero-contact,.fee-note,.contact-note,.attorney-background,.deadline-short){font:14px/1.6 Arial,Helvetica,sans-serif;color:var(--muted);margin:16px 0}
+.liebre-site :is(.note,.timing,.hero-contact,.fee-note,.contact-note,.attorney-background,.deadline-short){font:14px/1.6 var(--font);color:var(--muted);margin:16px 0}
 .liebre-site :is(.content,.detail,.reading-body > section:not(.hero),.reading-body > aside){margin:0;padding:32px 0;border:0;border-top:1px solid var(--line);background:none;border-radius:0}
 .liebre-site .reading-layout{display:grid;grid-template-columns:215px minmax(0,1fr);gap:64px;align-items:start}
 .liebre-site .reading-body{max-width:790px;width:100%;padding-bottom:40px}
-.liebre-site .page-index{padding:47px 0 24px;position:sticky;top:0;max-height:100vh;overflow-y:auto;font:13px/1.45 Arial,Helvetica,sans-serif}
-.liebre-site .index-label,.liebre-site .page-index h2{font:700 13px/1.5 Arial,Helvetica,sans-serif;margin:0 0 18px;letter-spacing:0}
+.liebre-site .page-index{padding:47px 0 24px;position:sticky;top:0;max-height:100vh;overflow-y:auto;font:13px/1.45 var(--font)}
+.liebre-site .index-label,.liebre-site .page-index h2{font:700 13px/1.5 var(--font);margin:0 0 18px;letter-spacing:0}
 .liebre-site .page-index :is(.section-nav,.jump,.situation-list){display:flex;flex-direction:column;gap:0;margin:0;padding:0;background:none;border:0}
-.liebre-site .page-index a{display:block;padding:10px 0;margin:0;background:none;border:0;border-bottom:1px solid var(--line);border-radius:0;color:var(--muted);font:13px/1.45 Arial,Helvetica,sans-serif;text-decoration:none}
+.liebre-site .page-index a{display:block;padding:10px 0;margin:0;background:none;border:0;border-bottom:1px solid var(--line);border-radius:0;color:var(--muted);font:13px/1.45 var(--font);text-decoration:none}
 .liebre-site .page-index a:hover{color:var(--blue);text-decoration:underline}
 .liebre-site .page-index .situation-link{display:block}
 .liebre-site .page-index :is(.situation-number,.situation-arrow){display:none}
 .liebre-site .page-index .situation-link strong{display:block;color:var(--ink);font-size:13px;line-height:1.4}
 .liebre-site .page-index .situation-link small{display:block;font-size:12px;line-height:1.5;margin-top:5px}
 /* Links and controls earn their weight through function, not decoration. */
-.liebre-site :is(.actions,.cta-row){display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin:22px 0 12px;font:14px/1.45 Arial,Helvetica,sans-serif}
-.liebre-site :is(.button,.cta,a.button,a.cta){display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 17px;background:var(--ink);border:1px solid var(--ink);color:#fff;text-decoration:none;font:600 14px/1.45 Arial,Helvetica,sans-serif;border-radius:0}
+.liebre-site :is(.actions,.cta-row){display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin:22px 0 12px;font:14px/1.45 var(--font)}
+.liebre-site :is(.button,.cta,a.button,a.cta){display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 17px;background:var(--ink);border:1px solid var(--ink);color:#fff;text-decoration:none;font:600 14px/1.45 var(--font);border-radius:0}
 .liebre-site :is(.button,.cta):hover{background:#353d37;color:#fff;text-decoration:underline}
 .liebre-site :is(.quiet,.actions>a:not(.button):not(.cta)){font-size:14px;background:none;border:0;color:var(--blue)}
 .liebre-site :is(input,select,textarea){font-size:16px;padding:10px 12px;border:1px solid #7b837b;background:#fff;color:var(--ink);max-width:100%;min-height:44px}
 .liebre-site input[type=checkbox],.liebre-site input[type=radio]{min-height:0;width:18px;height:18px;accent-color:var(--ink);flex-shrink:0}
-.liebre-site button{cursor:pointer;font:14px/1.45 Arial,Helvetica,sans-serif;border:1px solid var(--line);background:#fff;color:var(--ink);padding:9px 13px;min-height:42px}
+.liebre-site button{cursor:pointer;font:14px/1.45 var(--font);border:1px solid var(--line);background:#fff;color:var(--ink);padding:9px 13px;min-height:42px}
 .liebre-site button[aria-pressed=true]{background:var(--ink);color:white;border-color:var(--ink)}
 /* Homepage: introduction above a two-column directory. */
 .liebre-site.home-page .home-intro{display:block;padding:38px 0 0}
 .liebre-site.home-page .intro-copy{position:static;display:grid;grid-template-columns:166px minmax(0,1fr) minmax(0,1fr);column-gap:48px;align-items:start;margin:0 0 42px;padding:0}
 .liebre-site.home-page .welcome-person{display:flex;flex-direction:column;align-items:flex-start;gap:13px;grid-column:1;grid-row:1/4;margin:0}
 .liebre-site.home-page .attorney-portrait{width:100px;height:133px;object-fit:cover;border-radius:50%;margin:0;background:none;box-shadow:none}
-.liebre-site.home-page .welcome-intro{font:14px/1.4 Arial,Helvetica,sans-serif;max-width:15ch;color:var(--muted);margin:0}
+.liebre-site.home-page .welcome-intro{font:14px/1.4 var(--font);max-width:15ch;color:var(--muted);margin:0}
 .liebre-site.home-page .intro-copy h1{grid-column:2;grid-row:1/4;font-size:45px;max-width:9ch;margin:0}
 .liebre-site.home-page .intro-copy .lead{grid-column:3;font-size:19px;line-height:1.5;margin:0 0 15px}
 .liebre-site.home-page .home-contact-actions{grid-column:3;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;padding:0;margin:0;border:0;background:none}
-.liebre-site.home-page .home-contact-actions a{display:block;min-height:0;padding:0;background:none;border:0;border-radius:0;color:var(--blue);font:13px/1.5 Arial,Helvetica,sans-serif;text-decoration:underline;text-underline-offset:3px}
+.liebre-site.home-page .home-contact-actions a{display:block;min-height:0;padding:0;background:none;border:0;border-radius:0;color:var(--blue);font:13px/1.5 var(--font);text-decoration:underline;text-underline-offset:3px}
 .liebre-site.home-page .home-contact-actions .contact-whatsapp{background:var(--ink);color:#fff;padding:10px 16px;text-decoration:none;margin-right:100px}
 .liebre-site.home-page .contact-number{display:inline;font-size:inherit}
 .liebre-site.home-page .contact-note{grid-column:3;font-size:12px;margin:12px 0 0}
@@ -76,18 +76,18 @@ html[lang=es] .liebre-site .contact-nav[lang=en],html[lang=en] .liebre-site .con
 .liebre-site.home-page .question-heading{grid-column:1;font-size:20px;line-height:1.25;margin:0;max-width:11ch}
 .liebre-site.home-page .esencial{display:contents}
 .liebre-site.home-page .question-group{margin:0;padding:0;border:0}
-.liebre-site.home-page .question-group h3{font:12px/1.4 Arial,Helvetica,sans-serif;color:var(--muted);letter-spacing:.02em;margin:0 0 11px}
+.liebre-site.home-page .question-group h3{font:12px/1.4 var(--font);color:var(--muted);letter-spacing:.02em;margin:0 0 11px}
 .liebre-site.home-page details.esen{padding:0;margin:0;border:0;border-top:1px solid var(--line);background:none;border-radius:0}
 .liebre-site.home-page details.esen:first-of-type{border-top:0}
-.liebre-site.home-page details.esen summary{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:16px 0;list-style:none;color:var(--ink);font:20px/1.25 Georgia,'Times New Roman',serif;font-weight:400;min-height:0}
+.liebre-site.home-page details.esen summary{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:16px 0;list-style:none;color:var(--ink);font:20px/1.25 var(--font);font-weight:400;min-height:0}
 .liebre-site.home-page details.esen summary .q{font:inherit}
 .liebre-site.home-page details.esen .chev{width:auto;height:auto;border:0;flex-shrink:0;margin-top:2px;transform:none!important}
-.liebre-site.home-page details.esen .chev:after{content:'+';font:18px/1.2 Arial;color:var(--muted)}
+.liebre-site.home-page details.esen .chev:after{content:'+';font:18px/1.2 var(--font);color:var(--muted)}
 .liebre-site.home-page details.esen[open] .chev:after{content:'−'}
-.liebre-site.home-page .esen-body{padding:0 0 20px;font:16px/1.6 Georgia,'Times New Roman',serif;background:none}
+.liebre-site.home-page .esen-body{padding:0 0 20px;font:16px/1.6 var(--font);background:none}
 .liebre-site.home-page .esen-body ol{padding-left:22px}
 .liebre-site.home-page .esen-body li{margin-bottom:10px}
-.liebre-site.home-page .esen-links{font:13px/1.4 Arial;display:flex;flex-wrap:wrap;gap:16px}
+.liebre-site.home-page .esen-links{font:13px/1.4 var(--font);display:flex;flex-wrap:wrap;gap:16px}
 .liebre-site.home-page .intro-questions>.note{grid-column:2/-1;margin:20px 0 0;font-size:13px}
 .liebre-site.home-page article>.content,.liebre-site.home-page article>.consult{padding:30px 0 35px;display:grid;grid-template-columns:166px minmax(0,1fr);gap:0 48px;margin:0;border-top:1px solid var(--line)}
 .liebre-site.home-page article>.content>h2,.liebre-site.home-page article>.consult>h2{grid-column:1;grid-row:1/8;font-size:19px;max-width:12ch}
@@ -98,10 +98,10 @@ html[lang=es] .liebre-site .contact-nav[lang=en],html[lang=en] .liebre-site .con
 .liebre-site .library-grid .guide-card{display:grid;grid-template-columns:120px minmax(0,1fr) 85px;gap:0 20px;align-items:baseline;padding:19px 0;min-height:0;border:0;border-bottom:1px solid var(--line);background:none;color:var(--ink);text-decoration:none}
 .liebre-site .library-grid .guide-card:first-child{border-top:1px solid var(--line)}
 .liebre-site .library-grid .guide-card svg{display:none}
-.liebre-site .library-grid .guide-card .tag{grid-column:1;grid-row:1;color:var(--muted);font:12px/1.5 Arial;padding:0;background:none;letter-spacing:0}
-.liebre-site .library-grid .guide-card h3{grid-column:2;grid-row:1;margin:0;color:var(--ink);font:21px/1.25 Georgia,'Times New Roman',serif;letter-spacing:0;max-width:none}
+.liebre-site .library-grid .guide-card .tag{grid-column:1;grid-row:1;color:var(--muted);font:12px/1.5 var(--font);padding:0;background:none;letter-spacing:0}
+.liebre-site .library-grid .guide-card h3{grid-column:2;grid-row:1;margin:0;color:var(--ink);font:21px/1.25 var(--font);letter-spacing:0;max-width:none}
 .liebre-site .library-grid .guide-card p{display:none}
-.liebre-site .library-grid .guide-card .go{grid-column:3;grid-row:1;justify-self:end;color:var(--blue);font:12px/1.5 Arial;margin:0;padding:0}
+.liebre-site .library-grid .guide-card .go{grid-column:3;grid-row:1;justify-self:end;color:var(--blue);font:12px/1.5 var(--font);margin:0;padding:0}
 .liebre-site .library-grid .guide-card:hover h3{text-decoration:underline;text-underline-offset:4px}
 .liebre-site :is(.library-links,.full-list){display:block;margin:0;padding:0;list-style:none}
 .liebre-site .library-links a{display:block;margin:0;padding:12px 0;border:0;border-bottom:1px solid var(--line);background:none}
@@ -110,9 +110,9 @@ html[lang=es] .liebre-site .contact-nav[lang=en],html[lang=en] .liebre-site .con
 .liebre-site :is(.related-grid>a,.card,.tile){padding:16px 0;border:0;border-top:1px solid var(--line);background:none;border-radius:0;color:var(--ink)}
 .liebre-site .related-grid a strong{color:var(--blue)}
 .liebre-site .urgent{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 40px;border:0;border-top:1px solid var(--line);background:none;margin:0;padding:24px 0 30px}
-.liebre-site .urgent a{display:block;padding:0 0 0 12px;border:0;border-left:2px solid var(--line);background:none;border-radius:0;color:var(--ink);font:13px/1.5 Arial;text-decoration:none;min-height:0}
-.liebre-site .urgent a strong{display:block;color:var(--blue);font:600 14px/1.4 Arial;margin-bottom:6px}
-.liebre-site .urgent a span{display:block;color:var(--muted);font:13px/1.5 Arial}
+.liebre-site .urgent a{display:block;padding:0 0 0 12px;border:0;border-left:2px solid var(--line);background:none;border-radius:0;color:var(--ink);font:13px/1.5 var(--font);text-decoration:none;min-height:0}
+.liebre-site .urgent a strong{display:block;color:var(--blue);font:600 14px/1.4 var(--font);margin-bottom:6px}
+.liebre-site .urgent a span{display:block;color:var(--muted);font:13px/1.5 var(--font)}
 .liebre-site .library-page .hero{max-width:none}
 .liebre-site.library-page .hero h1{max-width:24ch}
 .liebre-site .choice-grid{display:flex;flex-wrap:wrap;gap:0;margin:24px 0 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -132,30 +132,30 @@ html[lang=es] .liebre-site .contact-nav[lang=en],html[lang=en] .liebre-site .con
 .liebre-site .path-cards{display:block;margin:26px 0 18px;border-top:1px solid var(--line)}
 .liebre-site .path-card{display:grid;grid-template-columns:28px minmax(0,1fr) minmax(0,1fr) 15px;gap:14px;align-items:baseline;min-height:0;padding:14px 0;border:0;border-bottom:1px solid var(--line);background:none;color:var(--ink)}
 .liebre-site .path-card svg{display:none}
-.liebre-site .path-card .badge{position:static;background:none;color:var(--muted);padding:0;font:13px Arial;border:0;width:auto;height:auto}
-.liebre-site .path-card strong{font:600 16px/1.4 Arial;color:var(--ink);margin:0}
-.liebre-site .path-card small{font:13px/1.5 Arial;color:var(--muted)}
+.liebre-site .path-card .badge{position:static;background:none;color:var(--muted);padding:0;font:13px var(--font);border:0;width:auto;height:auto}
+.liebre-site .path-card strong{font:600 16px/1.4 var(--font);color:var(--ink);margin:0}
+.liebre-site .path-card small{font:13px/1.5 var(--font);color:var(--muted)}
 .liebre-site .path-card .go{font-size:14px;margin:0;position:static}
 .liebre-site .notice-map{margin:24px 0;padding:0;background:none;max-width:none;transform:none;border:0}
 .liebre-site .notice-sheet{background:var(--wash);padding:18px 22px;border:0;border-left:2px solid var(--ink);box-shadow:none;transform:none}
-.liebre-site .notice-title{font:600 14px Arial;margin:0 0 12px}
+.liebre-site .notice-title{font:600 14px var(--font);margin:0 0 12px}
 .liebre-site .notice-lines{display:none}
 .liebre-site .notice-sheet ol{display:flex;gap:22px;padding:0;margin:0;list-style:none}
-.liebre-site .notice-sheet li{display:flex;gap:9px;flex:1;font:13px/1.5 Arial;margin:0}
+.liebre-site .notice-sheet li{display:flex;gap:9px;flex:1;font:13px/1.5 var(--font);margin:0}
 .liebre-site .notice-sheet li strong,.liebre-site .notice-sheet li small{display:block}
-.liebre-site .notice-number{font:13px Arial;color:var(--muted)}
-.liebre-site .notice-map figcaption{font:11px/1.5 Arial;color:var(--muted);margin-top:8px}
+.liebre-site .notice-number{font:13px var(--font);color:var(--muted)}
+.liebre-site .notice-map figcaption{font:11px/1.5 var(--font);color:var(--muted);margin-top:8px}
 .liebre-site .quick-steps{display:block;margin:24px 0}
 .liebre-site .quick-step{display:flex;gap:18px;padding:18px 0;border:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:none;color:var(--ink)}
 .liebre-site .quick-step img{display:none}
-.liebre-site .quick-step strong{display:block;font:600 19px Arial}
-.liebre-site .quick-step small,.liebre-site .step-phase{font:13px/1.5 Arial;color:var(--muted);display:block}
-.liebre-site .quick-step .step-dot{background:none;color:var(--muted);font:14px Arial;padding:0;margin:0}
+.liebre-site .quick-step strong{display:block;font:600 19px var(--font)}
+.liebre-site .quick-step small,.liebre-site .step-phase{font:13px/1.5 var(--font);color:var(--muted);display:block}
+.liebre-site .quick-step .step-dot{background:none;color:var(--muted);font:14px var(--font);padding:0;margin:0}
 .liebre-site :is(.esencial-box,.callout,.deadline,.deadline-note,.aside,.uscis-reading){background:var(--wash);border:0;border-left:2px solid var(--ink);padding:22px 26px;margin:24px 0;border-radius:0;color:var(--ink)}
 .liebre-site .reading-body>:is(.deadline,.deadline-note,.esencial-box){padding:22px 26px;margin:0 0 30px;background:var(--wash);border-left:2px solid var(--ink);border-top:0}
 .liebre-site :is(.esencial-box,.deadline,.deadline-note) h2{font-size:21px;margin-bottom:16px}
 .liebre-site :is(details,.step-panel,.fold,.opinion-panel){padding:0;background:none;border:0;border-top:1px solid var(--line);margin:0;border-radius:0}
-.liebre-site summary{cursor:pointer;padding:18px 0;font:600 18px/1.4 Arial,Helvetica,sans-serif;color:var(--ink)}
+.liebre-site summary{cursor:pointer;padding:18px 0;font:600 18px/1.4 var(--font);color:var(--ink)}
 .liebre-site summary h2{font-size:22px;margin:0}
 .liebre-site summary::-webkit-details-marker{color:var(--muted)}
 .liebre-site :is(.step-panel,.opinion-panel)>summary{display:flex;align-items:baseline;gap:20px;list-style:none;padding:19px 0}
@@ -164,17 +164,17 @@ html[lang=es] .liebre-site .contact-nav[lang=en],html[lang=en] .liebre-site .con
 .liebre-site :is(.step-body,.fold-body,.opinion-panel-body){padding:4px 0 24px;margin:0;background:none}
 .liebre-site .step-panel .num{background:none;color:var(--muted);width:24px;height:auto;flex-shrink:0;padding:0;border:0;font-size:14px}
 .liebre-site .fold summary h2{display:flex;gap:18px;align-items:baseline}
-.liebre-site .fold .n{font:14px Arial;color:var(--muted);flex-shrink:0;min-width:20px}
+.liebre-site .fold .n{font:14px var(--font);color:var(--muted);flex-shrink:0;min-width:20px}
 .liebre-site .fold .chev{margin-left:auto}
 .liebre-site .detail{padding:0!important;border-top:0!important}
-.liebre-site .fold-controls{font:12px/1.5 Arial;margin:24px 0}
+.liebre-site .fold-controls{font:12px/1.5 var(--font);margin:24px 0}
 .liebre-site .fold-controls button{border:0;background:none;color:var(--blue);padding:7px 10px;font-size:12px;text-decoration:underline}
 .liebre-site .checklist{display:block;margin:16px 0}
-.liebre-site .checklist label{display:flex;align-items:baseline;gap:14px;padding:14px 0;border:0;border-bottom:1px solid var(--line);background:none;border-radius:0;font:16px/1.5 Georgia}
+.liebre-site .checklist label{display:flex;align-items:baseline;gap:14px;padding:14px 0;border:0;border-bottom:1px solid var(--line);background:none;border-radius:0;font:16px/1.5 var(--font)}
 .liebre-site .keyfacts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 30px;margin:0 0 32px;padding:0;border:0;background:none}
 .liebre-site .kf{padding:12px 0;border:0;border-top:1px solid var(--line);background:none}
-.liebre-site .kf strong{color:var(--ink);font:600 23px/1.4 Arial;display:block}
-.liebre-site .kf>span{font:13px/1.5 Arial;color:var(--muted);display:block}
+.liebre-site .kf strong{color:var(--ink);font:600 23px/1.4 var(--font);display:block}
+.liebre-site .kf>span{font:13px/1.5 var(--font);color:var(--muted);display:block}
 .liebre-site .steps{display:block;margin:24px 0;padding-left:26px}
 .liebre-site .steps>li{padding:18px 0;border:0;border-top:1px solid var(--line);background:none;margin:0;border-radius:0}
 .liebre-site .steps>li:before{display:none}
@@ -189,8 +189,8 @@ html[lang=es] .liebre-site .contact-nav[lang=en],html[lang=en] .liebre-site .con
 .liebre-site :is(.consult,.closing,.contact) :is(h2,p){color:var(--ink)}
 .liebre-site :is(.consult,.closing,.contact) a:not(.button):not(.cta){color:var(--blue)}
 .liebre-site :is(.consult,.closing,.contact) .note{color:var(--muted)}
-.liebre-site :is(.source-list,.sources,.resources){font:14px/1.6 Arial;color:var(--muted)}
-.liebre-site :is(.site-footer,body>footer){max-width:1144px;margin:0 auto;padding:24px 0 40px;border:0;border-top:2px solid var(--ink);background:none;color:var(--muted);font:12px/1.6 Arial}
+.liebre-site :is(.source-list,.sources,.resources){font:14px/1.6 var(--font);color:var(--muted)}
+.liebre-site :is(.site-footer,body>footer){max-width:1144px;margin:0 auto;padding:24px 0 40px;border:0;border-top:2px solid var(--ink);background:none;color:var(--muted);font:12px/1.6 var(--font)}
 .liebre-site footer p{margin:0 0 10px}
 .liebre-site :is(.contact-dock,.liebre-quick-contact,.sticky-contact){display:none!important}
 .liebre-site .mobile-contact{display:none}
@@ -266,7 +266,7 @@ html[lang=es] .liebre-site .contact-nav[lang=en],html[lang=en] .liebre-site .con
  .liebre-site :is(.esencial-box,.callout,.deadline,.deadline-note,.aside){padding:18px}
  .liebre-site :is(.site-footer,body>footer){margin:0 20px;padding:24px 0 32px}
  .liebre-site .mobile-contact{position:fixed;z-index:30;bottom:0;left:0;right:0;display:grid;grid-template-columns:1fr 1fr;gap:0;background:#fff;border-top:1px solid var(--ink);padding:0 20px max(0px,env(safe-area-inset-bottom))}
- .liebre-site .mobile-contact a{padding:16px 0;min-height:53px;text-align:center;font:600 14px/1.4 Arial;text-decoration:none;color:var(--ink)}
+ .liebre-site .mobile-contact a{padding:16px 0;min-height:53px;text-align:center;font:600 14px/1.4 var(--font);text-decoration:none;color:var(--ink)}
  .liebre-site .mobile-contact a:first-child{border-right:1px solid var(--line);color:var(--blue)}
  .liebre-site .stat-overview{flex-wrap:wrap}
 }
@@ -300,17 +300,17 @@ html[lang=es] .liebre-site .contact-nav[lang=en],html[lang=en] .liebre-site .con
 .liebre-site .quick-step>span:last-child{flex:0 0 auto;font-size:16px}
 .liebre-site .quick-step:nth-child(2){background:none}
 .liebre-site :is(.kf,.keyfacts,.quick-step,.tool-card,.guide-tile,.app-card,.data-card){border-radius:0}
-.liebre-site .resource-intro{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 24px;padding:18px 0;border-bottom:1px solid var(--line);font:13px/1.5 Arial}
+.liebre-site .resource-intro{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 24px;padding:18px 0;border-bottom:1px solid var(--line);font:13px/1.5 var(--font)}
 .liebre-site .resource-intro h2{font-size:15px;margin:0}
 .liebre-site .resource-intro p{margin:0}
-.liebre-site p.intro{padding:0;margin:0 0 24px;font:21px/1.5 Georgia;background:none;border:0}
+.liebre-site p.intro{padding:0;margin:0 0 24px;font:21px/1.5 var(--font);background:none;border:0}
 .liebre-site .hero-index{background:none;border:0;border-top:1px solid var(--line);padding:15px 0;margin:24px 0 0;color:var(--ink);display:flex;gap:20px;flex-wrap:wrap;align-items:baseline}
 .liebre-site .hero-index :is(img,.index-label){display:none}
-.liebre-site .hero-index>a{font:14px/1.5 Arial;letter-spacing:0;display:block;border:0;padding:0;color:var(--blue)}
+.liebre-site .hero-index>a{font:14px/1.5 var(--font);letter-spacing:0;display:block;border:0;padding:0;color:var(--blue)}
 .liebre-site .tools{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
 .liebre-site .tool-card{padding:18px 0;border:0;border-top:1px solid var(--line);background:none;color:var(--ink);min-height:0}
 .liebre-site .tool-card:before,.liebre-site .tool-card:after{display:none}
-.liebre-site .tool-card h3{font:600 19px/1.3 Arial;margin:10px 0}
+.liebre-site .tool-card h3{font:600 19px/1.3 var(--font);margin:10px 0}
 .liebre-site .tool-card .tool-icon{display:none}
 @media(max-width:700px){.liebre-site .tools{grid-template-columns:1fr}.liebre-site > header>.cta{margin:16px 16px 0 0;font-size:12px}.liebre-site > header>.header-contact{font-size:12px}.liebre-site > header>.masthead-contact{display:inline-block;margin-top:12px}.liebre-site .resource-intro{display:block}.liebre-site .resource-intro p{margin-top:8px}}
 .liebre-site #liebre-privacy-settings{position:static;display:block;margin:0 auto 24px;background:none;color:var(--muted);border:0;border-radius:0;box-shadow:none;text-decoration:underline;text-underline-offset:3px;min-height:44px}
@@ -325,3 +325,272 @@ html[lang=es] .liebre-site .contact-nav[lang=en],html[lang=en] .liebre-site .con
 .liebre-site :is(.consult,.closing,.contact) :is(a.button,a.cta){display:inline-flex;background:var(--ink);border:1px solid var(--ink);color:#fff;min-height:44px;padding:10px 17px}
 .liebre-site :is(.consult,.closing,.contact) :is(a.button,a.cta):hover{background:#353d37;color:#fff;border-color:#353d37}
 .liebre-site .deadline-short{background:none;border:0;border-left:2px solid var(--ink);border-radius:0;padding:4px 0 4px 14px}
+
+/* ===== Composed look, 2026-11-22: blue hero band with cut-out portrait, hare shape,
+   rounded humanist sans. John: "right direction". Replaces Codex's editorial paint. ===== */
+:root{--paper:#fff;--ink:#1c2233;--muted:#5a6275;--blue:#2349e8;--deep:#1a37b5;--link:#2349e8;--line:#dfe3ee;--wash:#f3f6ff;--tint:#eaf0ff;--green:#1f7a4c;--font:"Avenir Next","Nunito Sans","Segoe UI",Helvetica,Arial,sans-serif}
+body.liebre-site{font:17px/1.6 var(--font);color:var(--ink);background:#fff}
+body.liebre-site :is(h1,h2,h3,h4){letter-spacing:0;line-height:1.25;color:var(--ink);font-family:var(--font);font-weight:700}
+body.liebre-site h1{font-size:40px!important;line-height:1.12!important;letter-spacing:-.01em!important;max-width:none;margin:0 0 14px}
+body.liebre-site h2{font-size:26px;margin:0 0 12px}
+body.liebre-site h3{font-size:19px;margin:20px 0 8px}
+body.liebre-site p{margin:0 0 14px}
+body.liebre-site a{color:var(--link);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+body.liebre-site :is(a,button,input,select,textarea,summary):focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+/* Masthead */
+body.liebre-site :is(.language-bar,.top,.topbar){max-width:1120px;margin:0 auto;padding:10px 28px 0;background:none;border:0;font:14px/1.5 var(--font)}
+body.liebre-site :is(.language-bar,.language-switch,.topbar) :is(a,button){color:var(--muted);text-decoration:none;font:14px/1.5 var(--font);min-height:0;border:0;background:none;padding:0}
+body.liebre-site :is(.language-bar,.language-switch,.topbar) :is([aria-current=true],[aria-pressed=true]){color:var(--ink);font-weight:700;border:0}
+body.liebre-site > header{max-width:1120px;margin:0 auto;padding:6px 28px 16px;border:0;gap:12px 24px;flex-wrap:wrap;background:none}
+body.liebre-site > header :is(.logo,.brand){color:var(--blue);font:700 26px/1 var(--font);letter-spacing:.01em;gap:12px;text-decoration:none}
+body.liebre-site > header :is(.logo,.brand) img{filter:none;width:70px;height:auto}
+body.liebre-site > header nav{gap:6px 26px}
+body.liebre-site > header nav a,body.liebre-site .masthead-contact{color:var(--ink);font:500 16px/1.4 var(--font);text-decoration:none;padding:3px 0}
+body.liebre-site > header nav a:hover{color:var(--blue);text-decoration:underline}
+body.liebre-site > header .contact-nav,body.liebre-site .masthead-contact{color:var(--blue);font-weight:700}
+body.liebre-site main{max-width:1120px;padding:0 28px;margin:0 auto}
+body.liebre-site :is(.site-footer,body>footer){max-width:1120px;margin:36px auto 0;padding:20px 28px 36px;border:0;border-top:1px solid var(--line);font:13px/1.6 var(--font);color:var(--muted)}
+/* Blue band: used by the home intro and by every page head */
+body.liebre-site .home-intro .intro-copy,body.liebre-site main :is(.hero,.hero.compact,.intro):not(.home-intro){position:relative;background:var(--blue);color:#fff;box-shadow:0 0 0 100vmax var(--blue)!important;clip-path:inset(0 -100vmax);border:0}
+body.liebre-site main :is(.hero,.hero.compact,.intro):not(.home-intro){padding:40px 0 44px;margin:0 0 30px}
+body.liebre-site main :is(.hero,.intro):not(.home-intro) :is(h1,h2,h3,p,li,small,strong,figcaption,span){color:#fff}
+body.liebre-site main :is(.hero,.intro):not(.home-intro) a:not(.button):not(.cta){color:#fff}
+body.liebre-site main :is(.hero,.intro):not(.home-intro) :is(.lead,.lede),body.liebre-site p.intro{max-width:36em;font:20px/1.5 var(--font);margin:0 0 16px;opacity:.96}
+body.liebre-site .eyebrow{font-size:15px;letter-spacing:0;margin:0 0 8px;color:inherit;opacity:.9;font-weight:500}
+body.liebre-site :is(.note,.timing,.hero-contact,.fee-note,.contact-note,.attorney-background,.deadline-short){font:15px/1.55 var(--font);margin:10px 0}
+body.liebre-site main :is(.hero,.intro):not(.home-intro) :is(.note,.timing,.hero-contact){color:#fff;opacity:.9}
+body.liebre-site :is(.content,.detail,.reading-body > section:not(.hero),.reading-body > aside){padding:22px 0;border-top:1px solid var(--line)}
+/* Buttons */
+body.liebre-site button{font:15px/1.4 var(--font);border:1px solid #c5cbe0;background:#fff;color:var(--ink);padding:8px 14px;min-height:40px;border-radius:999px}
+body.liebre-site button[aria-pressed=true]{background:var(--blue);border-color:var(--blue);color:#fff}
+body.liebre-site :is(.button,.cta,a.button,a.cta),body.liebre-site :is(.consult,.closing,.contact) :is(a.button,a.cta),body.liebre-site .offer .cta{background:var(--blue);border:1.5px solid var(--blue);color:#fff;font:700 16px/1.4 var(--font);min-height:46px;padding:10px 22px;text-decoration:none;border-radius:999px}
+body.liebre-site :is(.button,.cta):hover{background:var(--deep);border-color:var(--deep);color:#fff}
+body.liebre-site a.button.whatsapp-contact,body.liebre-site :is(.consult,.closing,.contact) a.button.whatsapp-contact{background:var(--green);border-color:var(--green)}
+body.liebre-site main :is(.hero,.intro):not(.home-intro) :is(a.button,a.cta){background:#fff;border-color:#fff;color:var(--blue)}
+body.liebre-site main :is(.hero,.intro):not(.home-intro) a.button.whatsapp-contact{color:var(--green)}
+body.liebre-site :is(.actions,.cta-row){gap:10px 20px;margin:18px 0 10px;font:16px/1.45 var(--font)}
+/* Homepage hero */
+body.liebre-site.home-page .home-intro{display:block;padding:0}
+body.liebre-site.home-page .intro-copy{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);column-gap:20px;align-content:center;min-height:500px;padding:60px 0 84px;margin:0 0 34px;overflow:visible}
+body.liebre-site.home-page .intro-copy::before{content:"";position:absolute;right:-110px;top:26px;width:820px;height:292px;background:url(hare.svg) center/contain no-repeat;filter:brightness(0) invert(1);opacity:.13;pointer-events:none}
+body.liebre-site.home-page .intro-copy::after{content:"";position:absolute;left:50%;bottom:-1px;width:100vw;height:56px;transform:translateX(-50%);background:#fff;border-radius:50% 50% 0 0/100% 100% 0 0!important;z-index:3;pointer-events:none}
+body.liebre-site.home-page .welcome-person{display:contents}
+body.liebre-site.home-page .attorney-portrait{grid-column:2;grid-row:1/7;align-self:end;justify-self:end;width:auto;height:470px;max-width:none;margin:0 0 -84px;border-radius:0;mix-blend-mode:normal;filter:drop-shadow(0 18px 30px rgba(0,0,30,.35));position:relative;z-index:1}
+body.liebre-site.home-page .welcome-intro{grid-column:1;font:500 19px/1.4 var(--font);color:#fff;opacity:.92;max-width:none;margin:0 0 10px;position:relative;z-index:2}
+body.liebre-site.home-page .intro-copy h1{grid-column:1;font-size:58px!important;line-height:1.05!important;color:#fff;max-width:9.5em;margin:0 0 20px;padding:0;position:relative;z-index:2}
+body.liebre-site.home-page .intro-copy .lead{grid-column:1;font:21px/1.5 var(--font);color:#fff;max-width:30em;margin:0 0 28px;position:relative;z-index:2}
+body.liebre-site.home-page .home-contact-actions{grid-column:1;display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin:0;position:relative;z-index:2}
+body.liebre-site.home-page .home-contact-actions a{display:inline-block;width:auto;background:none;border:0;padding:0;margin:0;color:#fff;font:600 16px/1.4 var(--font);text-decoration:underline;text-underline-offset:3px}
+body.liebre-site.home-page .home-contact-actions .contact-whatsapp{background:#fff;color:var(--green);padding:14px 26px;border-radius:999px;font:700 18px/1.4 var(--font);text-decoration:none}
+body.liebre-site.home-page .home-contact-actions a[href^="tel:"]{background:rgba(255,255,255,.14);border:1.5px solid rgba(255,255,255,.7);padding:13px 24px;border-radius:999px;font:700 18px/1.4 var(--font);text-decoration:none}
+body.liebre-site.home-page .contact-number{font-weight:700;font-size:inherit;display:inline}
+body.liebre-site.home-page .contact-note{grid-column:1;font-size:15px;color:#fff;opacity:.85;margin:16px 0 0;position:relative;z-index:2}
+/* Homepage questions */
+body.liebre-site.home-page .intro-questions{display:block;border:0;padding:0;margin:0}
+body.liebre-site.home-page .question-heading{font-size:34px;max-width:none;margin:0 0 22px}
+body.liebre-site.home-page .esencial{display:grid;grid-template-columns:1fr 1fr;gap:10px 56px;border:0;margin:0;align-items:start}
+body.liebre-site.home-page .question-group{margin:0}
+body.liebre-site.home-page .question-group h3{font:700 15px/1.3 var(--font);color:var(--blue);background:none;padding:0;margin:0 0 4px;letter-spacing:0;border:0}
+body.liebre-site.home-page details.esen{border:0;border-bottom:1px solid var(--line);margin:0;background:none}
+body.liebre-site.home-page details.esen summary{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:15px 2px;background:none;font:500 20px/1.35 var(--font);color:var(--ink);list-style:none}
+body.liebre-site.home-page details.esen summary .q{color:var(--ink);text-decoration:none;font:inherit}
+body.liebre-site.home-page details.esen .chev{display:block;width:auto;height:auto;border:0;margin:0;transform:none!important}
+body.liebre-site.home-page details.esen .chev:after{content:"›";color:var(--blue);font:700 22px/1 var(--font)}
+body.liebre-site.home-page details.esen[open] .chev:after{content:"–"}
+body.liebre-site.home-page details.esen[open]{background:var(--wash);border-radius:12px;border-bottom-color:transparent;padding:0 14px;margin:4px -14px}
+body.liebre-site.home-page details.esen[open] summary{color:var(--blue)}
+body.liebre-site.home-page .esen-body{padding:0 0 16px;font:16px/1.55 var(--font)}
+body.liebre-site.home-page .esen-body li{font-size:16px;margin-bottom:8px;max-width:none}
+body.liebre-site.home-page .esen-links{font:600 15px/1.4 var(--font);gap:18px}
+body.liebre-site.home-page .esen-body .button{background:var(--green);border:1.5px solid var(--green);color:#fff;padding:9px 18px;min-height:0;font-size:15px}
+body.liebre-site.home-page .intro-questions>.note{margin:18px 0 0;font-size:15px}
+body.liebre-site.home-page article>.content,body.liebre-site.home-page article>.consult{display:block;padding:30px 0;border-top:1px solid var(--line)}
+body.liebre-site.home-page article>.content>h2,body.liebre-site.home-page article>.consult>h2{font-size:28px;max-width:none}
+body.liebre-site.home-page article>.content>p{max-width:46em}
+/* Tool strip: soft band */
+body.liebre-site .urgent{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px;background:var(--tint);border:0;margin:40px 0 8px;padding:34px 0;box-shadow:0 0 0 100vmax var(--tint)!important;clip-path:inset(0 -100vmax round 48px 48px 0 0)}
+body.liebre-site .urgent a{background:none;border:0;padding:0;text-decoration:none;color:var(--ink);font:15px/1.45 var(--font);min-height:0}
+body.liebre-site .urgent a strong{display:block;color:var(--blue);font:700 18px/1.3 var(--font);text-decoration:none;margin-bottom:6px}
+body.liebre-site .urgent a span{display:block;font:15px/1.45 var(--font);color:var(--ink)}
+body.liebre-site .reading-body .urgent{grid-template-columns:repeat(3,minmax(0,1fr));box-shadow:none!important;clip-path:none;border-radius:18px;padding:22px 24px;margin:0 0 22px}
+/* Guide lists */
+body.liebre-site .library-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 56px;columns:auto}
+body.liebre-site .library-grid .guide-card,body.liebre-site .library-grid .guide-card:first-child{display:block;padding:14px 2px;border:0;border-bottom:1px solid var(--line);text-decoration:none;background:none}
+body.liebre-site .library-grid .guide-card svg{display:none}
+body.liebre-site .library-grid .guide-card .tag{display:block;font:600 13px/1.4 var(--font);color:var(--blue);background:none;padding:0}
+body.liebre-site .library-grid .guide-card h3{font:500 19px/1.35 var(--font);color:var(--ink);text-decoration:none;margin:2px 0 0;letter-spacing:0}
+body.liebre-site .library-grid .guide-card:hover h3{color:var(--blue);text-decoration:underline}
+body.liebre-site .library-grid .guide-card :is(p,.go){display:none}
+body.liebre-site .library-links a{display:block;padding:12px 2px;border:0;border-bottom:1px solid var(--line);background:none;font-weight:500}
+body.liebre-site .full-list li{padding:9px 2px;border-bottom:1px solid var(--line)}
+body.liebre-site :is(.related-grid,.cards,.tiles,.tools){gap:16px;margin:16px 0}
+body.liebre-site :is(.related-grid>a,.card,.tile,.tool-card,.kf){background:var(--wash);border:0;border-radius:14px;padding:16px 18px}
+body.liebre-site .choice-grid{display:flex;flex-wrap:wrap;gap:10px;border:0;margin:18px 0 0}
+body.liebre-site .choice{flex:1;min-width:170px;border:1.5px solid rgba(255,255,255,.7);background:rgba(255,255,255,.12);padding:12px 18px;border-radius:14px;color:#fff;text-align:left}
+body.liebre-site .choice svg{display:none}
+body.liebre-site .choice strong{font-size:16px;color:#fff;text-decoration:none}
+body.liebre-site .choice[aria-pressed=true]{background:#fff;border-color:#fff;padding:12px 18px}
+body.liebre-site .choice[aria-pressed=true] strong{color:var(--blue)}
+body.liebre-site .followup{padding:18px 0;border:0}
+body.liebre-site .browse-tools{margin:16px 0}
+body.liebre-site :is(input,select,textarea){border:1.5px solid #c5cbe0;border-radius:10px;font:16px/1.4 var(--font)}
+/* Reading pages */
+body.liebre-site .reading-layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:0 44px;align-items:start}
+body.liebre-site .reading-layout>.hero{grid-column:1/-1;grid-row:1;max-width:none;width:auto}
+body.liebre-site .reading-layout>.page-index{grid-column:1;grid-row:2;margin:0;padding:18px 20px;top:14px;max-height:calc(100vh - 28px);background:var(--wash);border:0;border-radius:16px;font:15px/1.45 var(--font)}
+body.liebre-site .reading-layout>.reading-body{grid-column:2;grid-row:2;max-width:none}
+body.liebre-site .index-label,body.liebre-site .page-index h2{font:700 15px/1.4 var(--font);margin:0 0 6px;color:var(--ink)}
+body.liebre-site .page-index a{display:block;padding:7px 0;border:0;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none;font:15px/1.4 var(--font)}
+body.liebre-site .page-index a:hover{color:var(--blue);text-decoration:underline}
+body.liebre-site .page-index a:last-child{border-bottom:0}
+body.liebre-site .section-nav{position:static;background:none;margin:0}
+body.liebre-site .path-cards{margin:18px 0 6px;border:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+body.liebre-site .path-card{display:block;padding:14px 16px;border:1.5px solid rgba(255,255,255,.55);border-radius:14px;background:rgba(255,255,255,.1);text-decoration:none}
+body.liebre-site .path-card svg,body.liebre-site .path-card .go{display:none}
+body.liebre-site .path-card .badge{display:block;position:static;background:none;border:0;padding:0;width:auto;height:auto;font:700 14px/1.4 var(--font);color:#fff;opacity:.85}
+body.liebre-site .path-card strong{display:block;font:700 17px/1.35 var(--font);color:#fff;text-decoration:none;margin:2px 0}
+body.liebre-site .path-card small{display:block;font:14px/1.45 var(--font);color:#fff;opacity:.9}
+body.liebre-site .notice-map{margin:18px 0 0;max-width:none}
+body.liebre-site .notice-sheet{background:rgba(255,255,255,.12);border:0;border-radius:14px;padding:16px 18px;margin:0}
+body.liebre-site .quick-step{padding:12px 2px;border:0;border-bottom:1px solid var(--line);gap:12px;text-decoration:none}
+body.liebre-site .quick-step strong{font:700 17px/1.4 var(--font);color:var(--blue)}
+body.liebre-site .quick-step>span:last-child{display:none}
+body.liebre-site :is(.esencial-box,.callout,.deadline,.deadline-note,.aside,.uscis-reading,.offer),body.liebre-site .reading-body>section:is(.esencial-box,.deadline,.deadline-note){background:var(--wash);border:0;border-radius:16px;padding:20px 22px;margin:0 0 20px}
+body.liebre-site :is(.esencial-box,.deadline,.deadline-note) h2{font-size:21px;margin-bottom:10px}
+body.liebre-site .callout{font-size:16px;max-width:none;background:#fff6dc}
+body.liebre-site .deadline-short{border-left:4px solid var(--blue);padding:2px 0 2px 12px;background:none}
+body.liebre-site main :is(.hero,.intro):not(.home-intro) .deadline-short{border-left-color:#fff}
+body.liebre-site :is(details,.step-panel,.fold,.opinion-panel){border:0;margin:0 0 8px;padding:0;background:none}
+body.liebre-site summary{padding:13px 18px;background:var(--tint);border-radius:12px;font:700 17px/1.4 var(--font);color:var(--ink);cursor:pointer}
+body.liebre-site summary:after{display:none!important}
+body.liebre-site :is(.step-panel,.opinion-panel)>summary,body.liebre-site .detail details.fold>summary{display:list-item;list-style:disclosure-closed inside;padding:13px 18px;margin:0}
+body.liebre-site :is(.step-panel,.opinion-panel)[open]>summary,body.liebre-site .detail details.fold[open]>summary{list-style-type:disclosure-open}
+body.liebre-site .step-panel .num{display:inline;width:auto;color:var(--ink);font:inherit;margin-right:6px;background:none;border:0;padding:0}
+body.liebre-site .step-panel .num:after,body.liebre-site .fold .n:after{content:"."}
+body.liebre-site .detail details.fold summary h2{display:inline;font-size:19px;margin:0}
+body.liebre-site .detail details.fold summary h2 .n{display:inline;min-width:0;height:auto;border-radius:0;background:none;color:var(--ink);font:inherit;margin-right:6px}
+body.liebre-site .fold .t{display:inline}
+body.liebre-site .fold .chev{display:none}
+body.liebre-site .detail details.fold summary:hover h2 .t{color:var(--blue)}
+body.liebre-site :is(.step-body,.fold-body,.opinion-panel-body),body.liebre-site .detail .fold-body{padding:14px 18px 16px;animation:none}
+body.liebre-site .detail{padding:0!important;border:0!important}
+body.liebre-site .detail h3{font-size:19px;margin:20px 0 8px;color:var(--ink)}
+body.liebre-site .detail :is(p,li){max-width:none;color:var(--ink)}
+body.liebre-site .detail li{margin:6px 0}
+body.liebre-site .fold-controls{font:14px/1.5 var(--font);margin:0 0 14px;color:var(--muted)}
+body.liebre-site .fold-controls button{border:1px solid #c5cbe0;border-radius:999px;background:#fff;color:var(--blue);font:600 14px/1.4 var(--font);min-height:0;padding:5px 14px;text-decoration:none}
+body.liebre-site .checklist label{padding:11px 2px;border:0;border-bottom:1px solid var(--line);font:16px/1.5 var(--font);background:none}
+body.liebre-site .keyfacts{gap:12px;margin:0 0 20px}
+body.liebre-site .kf strong{color:var(--blue);font:700 22px/1.25 var(--font);letter-spacing:0;white-space:normal}
+body.liebre-site .kf>span{font:14px/1.45 var(--font);color:var(--muted)}
+body.liebre-site :is(ol,ul).steps{display:block;list-style:decimal;padding-left:26px;max-width:none;counter-reset:none}
+body.liebre-site .steps li,body.liebre-site .detail ol.steps li{display:list-item;padding:8px 0;margin:0;border:0;border-bottom:1px solid var(--line);background:none;border-radius:0}
+body.liebre-site .steps li:before,body.liebre-site .detail ol.steps li::before{display:none}
+body.liebre-site .steps h3{font-size:18px;margin:0 0 6px}
+body.liebre-site .steps .time-label{background:var(--wash);border-radius:12px;padding:12px 14px;margin-top:10px}
+body.liebre-site :is(.detail table,table.cmp){border:1px solid var(--line);border-radius:12px;font-size:15px;max-width:none;overflow:hidden}
+body.liebre-site :is(.detail th,table.cmp thead th,th){background:var(--tint);color:var(--ink);text-transform:none;letter-spacing:0;font-size:15px}
+body.liebre-site table.cmp td strong{color:var(--ink)}
+body.liebre-site .detail .path>div{background:var(--wash);border:0;border-radius:14px;padding:14px 16px}
+body.liebre-site .pill{border-radius:999px;background:var(--tint);color:var(--blue)}
+body.liebre-site .hero-contact{font-weight:400}
+body.liebre-site .service-row{padding:20px 0;border-top:1px solid var(--line)}
+body.liebre-site :is(.consult,.closing,.contact){background:var(--tint);border:0;border-radius:22px;padding:28px 30px;margin:30px 0 0;color:var(--ink)}
+body.liebre-site.home-page article>.consult{padding:28px 30px;border:0}
+body.liebre-site :is(.source-list,.sources,.resources){font:14px/1.6 var(--font);color:var(--muted)}
+body.liebre-site .tool-card h3{font:700 18px/1.3 var(--font);margin:6px 0}
+body.liebre-site .hero-index{border:0;border-top:1px solid rgba(255,255,255,.35);padding:12px 0 0;margin:16px 0 0}
+body.liebre-site .hero-index>a{color:#fff;font:15px/1.5 var(--font)}
+body.liebre-site .resource-intro{border-bottom:1px solid var(--line);padding:14px 0}
+body.liebre-site .mobile-contact{display:none}
+@media(max-width:1000px){
+ body.liebre-site.home-page .intro-copy h1{font-size:46px!important}
+ body.liebre-site.home-page .attorney-portrait{height:400px}
+ body.liebre-site .reading-layout{grid-template-columns:200px minmax(0,1fr);gap:0 28px}
+ body.liebre-site .urgent{grid-template-columns:1fr 1fr}
+}
+@media(max-width:700px){
+ body.liebre-site{font-size:17px;padding-bottom:62px}
+ body.liebre-site :is(.language-bar,.top,.topbar){padding:8px 18px 0}
+ body.liebre-site > header{display:block;margin:0;padding:6px 18px 12px}
+ body.liebre-site > header :is(.brand,.logo){font-size:22px}
+ body.liebre-site > header :is(.brand,.logo) img{width:54px}
+ body.liebre-site > header nav{margin-top:10px;gap:4px 18px;justify-content:flex-start}
+ body.liebre-site > header nav a{font-size:15px}
+ body.liebre-site main{padding:0 18px}
+ body.liebre-site h1{font-size:30px!important}
+ body.liebre-site h2{font-size:23px}
+ body.liebre-site main :is(.hero,.hero.compact,.intro):not(.home-intro){padding:26px 0 30px;margin-bottom:22px}
+ body.liebre-site main :is(.hero,.intro):not(.home-intro) :is(.lead,.lede),body.liebre-site p.intro{font-size:18px}
+ body.liebre-site.home-page .intro-copy{display:block;min-height:0;padding:30px 0 0;margin-bottom:26px}
+ body.liebre-site.home-page .intro-copy::before{right:-160px;top:auto;bottom:150px;width:560px;height:200px}
+ body.liebre-site.home-page .intro-copy::after{height:30px}
+ body.liebre-site.home-page .welcome-person{display:contents}
+ body.liebre-site.home-page .welcome-intro{font-size:17px}
+ body.liebre-site.home-page .intro-copy h1{font-size:40px!important;margin-bottom:14px}
+ body.liebre-site.home-page .intro-copy .lead{font-size:18px;margin-bottom:20px}
+ body.liebre-site.home-page .home-contact-actions .contact-whatsapp,body.liebre-site.home-page .home-contact-actions a[href^="tel:"]{flex:1 1 100%;text-align:center}
+ body.liebre-site.home-page .attorney-portrait{display:block;height:300px;margin:18px auto 0}
+ body.liebre-site.home-page .question-heading{font-size:27px;margin-bottom:16px}
+ body.liebre-site.home-page .esencial{grid-template-columns:1fr;gap:22px}
+ body.liebre-site.home-page details.esen summary{font-size:18px;padding:14px 2px}
+ body.liebre-site.home-page article>.content>h2,body.liebre-site.home-page article>.consult>h2{font-size:24px}
+ body.liebre-site .urgent,body.liebre-site .reading-body .urgent{grid-template-columns:1fr;gap:18px;padding:26px 0}
+ body.liebre-site .reading-body .urgent{padding:18px}
+ body.liebre-site .library-grid{grid-template-columns:1fr}
+ body.liebre-site .choice{flex:1 1 calc(50% - 5px);min-width:0;padding:12px}
+ body.liebre-site .reading-layout{display:flex;flex-direction:column}
+ body.liebre-site .reading-layout>.hero{order:0}
+ body.liebre-site .reading-layout>.page-index{order:1;position:static;max-height:none;margin:0 0 18px;padding:14px 16px;border:0}
+ body.liebre-site .reading-layout>.reading-body{order:2}
+ body.liebre-site .page-index nav{display:block!important;overflow:visible;padding:0!important}
+ body.liebre-site .page-index nav a{display:block;font-size:15px;padding:8px 0;flex:none}
+ body.liebre-site .path-cards{grid-template-columns:1fr}
+ body.liebre-site :is(.consult,.closing,.contact),body.liebre-site.home-page article>.consult{padding:22px 18px;border-radius:18px}
+ body.liebre-site :is(.site-footer,body>footer){margin:26px 0 0;padding:16px 18px 30px}
+ body.liebre-site .mobile-contact{position:fixed;z-index:30;bottom:0;left:0;right:0;display:grid;grid-template-columns:1fr 1fr;gap:8px;background:#fff;border-top:1px solid var(--line);padding:8px 12px max(8px,env(safe-area-inset-bottom))}
+ body.liebre-site .mobile-contact a{padding:11px 0;min-height:44px;text-align:center;font:700 16px/1.4 var(--font);text-decoration:none;color:#fff;background:var(--blue);border-radius:999px;border:0}
+ body.liebre-site .mobile-contact a:first-child{background:var(--green);color:#fff;border:0}
+}
+body.liebre-site.home-page main .home-intro{background:none;box-shadow:none!important;clip-path:none;padding:0;margin:0;color:var(--ink)}
+body.liebre-site.home-page .welcome-intro{grid-row:1}
+body.liebre-site.home-page .intro-copy h1{grid-row:2}
+body.liebre-site.home-page .intro-copy .lead{grid-row:3}
+body.liebre-site.home-page .home-contact-actions{grid-row:4}
+body.liebre-site.home-page .contact-note{grid-row:5}
+body.liebre-site.home-page .attorney-portrait{grid-row:1/6;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 10%,#000 90%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 10%,#000 90%,transparent 100%)}
+body.liebre-site.home-page main .home-intro .home-contact-actions a.contact-whatsapp{color:var(--green)}
+body.liebre-site.home-page main .home-intro .home-contact-actions a{color:#fff}
+body.liebre-site.home-page main .home-intro .home-contact-actions a.contact-whatsapp{color:var(--green)}
+body.liebre-site.home-page .intro-copy::after{bottom:-3px;height:59px;border:0;box-shadow:none!important}
+body.liebre-site.home-page .home-contact-actions{max-width:470px}
+@media(max-width:700px){
+ body.liebre-site.home-page .intro-copy{display:flex;flex-direction:column;padding:28px 0 0}
+ body.liebre-site.home-page .attorney-portrait{order:9;align-self:center;height:290px;margin:16px 0 0}
+ body.liebre-site.home-page .intro-copy::after{height:28px;bottom:-2px}
+ body.liebre-site.home-page .home-contact-actions{max-width:none}
+}
+body.liebre-site main :is(.hero,.intro):not(.home-intro) :is(.offer,.callout,.esencial-box,.aside,.deadline,.deadline-note) :is(h1,h2,h3,p,li,small,strong,span,figcaption){color:var(--ink)}
+body.liebre-site main :is(.hero,.intro):not(.home-intro) :is(.offer,.callout,.esencial-box,.aside,.deadline,.deadline-note) a:not(.button):not(.cta){color:var(--blue)}
+body.liebre-site main :is(.hero,.intro):not(.home-intro) :is(.offer,.callout,.esencial-box,.aside,.deadline,.deadline-note) :is(a.button,a.cta){background:var(--blue);border-color:var(--blue);color:#fff}
+body.liebre-site.home-page .intro-copy{border-bottom:3px solid #fff}
+body.liebre-site.home-page .intro-copy::after{bottom:0}
+@media(max-width:700px){body.liebre-site.home-page .intro-copy::after{bottom:0}}
+body.liebre-site.home-page .home-intro .intro-copy{clip-path:inset(0 -100vmax 2px -100vmax)}
+body.liebre-site.home-page .home-intro .intro-copy{clip-path:inset(0 -100vmax -8px -100vmax);border-bottom:0}
+body.liebre-site.home-page .intro-copy::after{bottom:-10px;height:66px;width:calc(100vw + 40px)}
+@media(max-width:700px){body.liebre-site.home-page .intro-copy::after{bottom:-10px;height:38px}}
+body.liebre-site{overflow-x:clip}
+body.liebre-site.home-page .home-intro .intro-copy{box-shadow:none!important;clip-path:none;border:0;border-image:linear-gradient(var(--blue),var(--blue)) fill 0/0/0 100vmax}
+body.liebre-site.home-page .intro-copy::after{bottom:-1px;height:57px;width:100vw}
+@media(max-width:700px){body.liebre-site.home-page .intro-copy::after{bottom:-1px;height:29px}}
+/* John prefers texts to calls: text is the second pill, call is a plain link. */
+body.liebre-site.home-page main .home-intro .home-contact-actions a.contact-whatsapp{order:1}
+body.liebre-site.home-page main .home-intro .home-contact-actions a[href^="sms:"]{order:2;background:rgba(255,255,255,.14);border:1.5px solid rgba(255,255,255,.75);padding:13px 24px;border-radius:999px;font:700 18px/1.4 var(--font);text-decoration:none}
+body.liebre-site.home-page main .home-intro .home-contact-actions a[href^="tel:"]{order:3;background:none;border:0;padding:0;border-radius:0;font:600 16px/1.4 var(--font);text-decoration:underline}
+body.liebre-site.home-page main .home-intro .home-contact-actions a[href^="tel:"] .contact-number{font-weight:600}
+body.liebre-site.home-page main .home-intro .home-contact-actions a[href^="mailto:"]{order:4}
+@media(max-width:700px){
+ body.liebre-site.home-page main .home-intro .home-contact-actions a[href^="sms:"]{flex:1 1 100%;text-align:center}
+ body.liebre-site.home-page main .home-intro .home-contact-actions a[href^="tel:"]{flex:0 1 auto;text-align:left}
+}
